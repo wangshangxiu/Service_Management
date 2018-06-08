@@ -1,0 +1,1452 @@
+Log file created at: 2018/04/26 12:16:02
+Running on machine: ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0426 12:16:02.619015 13826 Public.cpp:21] InitLogSys ....
+I0426 12:16:02.822432 13826 tnode.cpp:273] Tnode Init sucess ...
+
+I0426 12:16:02.844161 13826 tnode.cpp:77] AddTNodeConsumer Sucess: exchange:t_node_grp, bindingkey:manger_bkey, queue:ManagerQueue  ...
+
+I0426 12:16:02.844265 13828 consumer.cpp:142] run consumer ...
+
+I0426 12:16:02.919466 13831 tnode.cpp:273] Tnode Init sucess ...
+
+I0426 12:16:02.929455 13829 tnode.cpp:273] Tnode Init sucess ...
+
+I0426 12:16:02.929486 13830 tnode.cpp:273] Tnode Init sucess ...
+
+I0426 12:20:24.004230 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1a060
+
+I0426 12:20:24.004487 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[159],msg[{ "WSID" : 1, "SessionID" : "lqssjnzf", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524716406028"}] 
+ 
+I0426 12:20:24.004503 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1a060
+
+I0426 12:20:24.004608 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1a060
+
+I0426 12:20:24.004812 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 1, "SessionID" : "lqssjnzf", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524716406028"}], tag:[0x2001]
+
+I0426 12:20:24.053828 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.1],json:[%],recv json:[{"Tag":8194,"SessionID":"lqssjnzf","RequestID":"1524716406028","UserID":10005,"Status":0,"WSID":1}],Tag[0xd1a064]
+
+I0426 12:20:24.054016 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1a060
+
+I0426 12:21:49.185405 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1a890
+
+I0426 12:21:49.185472 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[155],msg[{ "WSID" : 2, "SessionID" : "ycxx2s00", "Tag":8193,"username":"test007@qq.com","loginpassword":"123sdaf","srcip":"192.168.0.1","RequestID":"1524716554403"}28"}] 
+ 
+I0426 12:21:49.185477 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1a890
+
+I0426 12:21:49.185803 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1a890
+
+I0426 12:21:49.185828 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "ycxx2s00", "Tag":8193,"username":"test007@qq.com","loginpassword":"123sdaf","srcip":"192.168.0.1","RequestID":"1524716554403"}], tag:[0x2001]
+
+E0426 12:21:49.193946 13830 MgrBase.cpp:132] Login db check : Query result is 0, QuerySql:SELECT id, loginpassword from user WHERE username='test007@qq.com' and loginpassword='123sdaf';
+E0426 12:21:49.195097 13830 LoginOutMgr.cpp:83] Login Query :SELECT id, loginpassword from user WHERE username='test007@qq.com' and loginpassword='123sdaf';,return row:0,[]
+
+I0426 12:21:49.195219 13830 LoginOutMgr.cpp:88] ManagerSrv-->WS,Send Login fail msg; routingkey:[WebSrv.2],json:[{"Tag":8194,"SessionID":"ycxx2s00","RequestID":"1524716554403","Status":-1,"WSID":2}],recv json:[{ "WSID" : 2, "SessionID" : "ycxx2s00", "Tag":8193,"username":"test007@qq.com","loginpassword":"123sdaf","srcip":"192.168.0.1","RequestID":"1524716554403"}],Tag[0x2001]
+
+I0426 12:21:49.195327 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1a890
+
+I0426 12:23:52.744191 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1b0c0
+
+I0426 12:23:52.744261 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[169],msg[{ "WSID" : 2, "SessionID" : "nu3xhnjy", "Tag":8193,"username":"test007@qq.com","loginpassword":"123sdaf","srcip":"192.168.0.1","UserID":null,"RequestID":"1524716671269"}":"1524716554403"}28"}] 
+ 
+I0426 12:23:52.744266 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1b0c0
+
+I0426 12:23:52.745105 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1b0c0
+
+I0426 12:23:52.745133 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "nu3xhnjy", "Tag":8193,"username":"test007@qq.com","loginpassword":"123sdaf","srcip":"192.168.0.1","UserID":null,"RequestID":"1524716671269"}], tag:[0x2001]
+
+E0426 12:23:52.755192 13830 MgrBase.cpp:132] Login db check : Query result is 0, QuerySql:SELECT id, loginpassword from user WHERE username='test007@qq.com' and loginpassword='123sdaf';
+E0426 12:23:52.755266 13830 LoginOutMgr.cpp:83] Login Query :SELECT id, loginpassword from user WHERE username='test007@qq.com' and loginpassword='123sdaf';,return row:0,[]
+
+I0426 12:23:52.755340 13830 LoginOutMgr.cpp:88] ManagerSrv-->WS,Send Login fail msg; routingkey:[WebSrv.2],json:[{"Tag":8194,"SessionID":"nu3xhnjy","RequestID":"1524716671269","Status":-1,"WSID":2}],recv json:[{ "WSID" : 2, "SessionID" : "nu3xhnjy", "Tag":8193,"username":"test007@qq.com","loginpassword":"123sdaf","srcip":"192.168.0.1","UserID":null,"RequestID":"1524716671269"}],Tag[0x2001]
+
+I0426 12:23:52.755352 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1b0c0
+
+I0426 12:24:53.571364 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1b8f0
+
+I0426 12:24:53.572293 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[168],msg[{ "WSID" : 2, "SessionID" : "nu3xhnjy", "Tag":8193,"username":"test007@qq.com","loginpassword":"123456","srcip":"192.168.0.1","UserID":null,"RequestID":"1524716671269"}%] 
+ 
+I0426 12:24:53.572345 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1b8f0
+
+I0426 12:24:53.573171 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1b8f0
+
+I0426 12:24:53.573256 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "nu3xhnjy", "Tag":8193,"username":"test007@qq.com","loginpassword":"123456","srcip":"192.168.0.1","UserID":null,"RequestID":"1524716671269"}], tag:[0x2001]
+
+I0426 12:24:53.620157 13830 LoginOutMgr.cpp:118] ManagerSrv-->WS, User:test007@qq.com, UserId:10007 alread online, and kick it; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":131105,"SessionID":"nu3xhnjy","RequestID":"1524716671269","Status":-2,"WSID":2}],Tag[0xd1b8f4]
+
+I0426 12:24:53.620227 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"nu3xhnjy","RequestID":"1524716671269","UserID":10007,"Status":0,"WSID":2}],Tag[0xd1b8f4]
+
+I0426 12:24:53.620257 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1b8f0
+
+I0426 14:00:16.080765 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1c120
+
+I0426 14:00:16.081004 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 2, "SessionID" : "0fss4k3e", "Tag":131089,"UserID":10005,"srcip":"192.168.0.1","RequestID":"1524722396959"}eru] 
+ 
+I0426 14:00:16.081010 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1c120
+
+I0426 14:00:16.081305 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1c120
+
+I0426 14:00:16.081387 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 2, "SessionID" : "0fss4k3e", "Tag":131089,"UserID":10005,"srcip":"192.168.0.1","RequestID":"1524722396959"}]
+
+I0426 14:00:16.089447 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1c120
+
+I0426 14:00:28.371664 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1c950
+
+I0426 14:00:28.371969 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[173],msg[{ "WSID" : 2, "SessionID" : "0fss4k3e", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524722396959"}] 
+ 
+I0426 14:00:28.371976 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1c950
+
+I0426 14:00:28.373060 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1c950
+
+I0426 14:00:28.373086 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "0fss4k3e", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524722396959"}], tag:[0x2001]
+
+I0426 14:00:28.419801 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"0fss4k3e","RequestID":"1524722396959","UserID":10005,"Status":0,"WSID":2}],Tag[0xd1c954]
+
+I0426 14:00:28.419826 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1c950
+
+I0426 14:03:17.831682 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1d180
+
+I0426 14:03:17.831743 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 2, "SessionID" : "tugimkzd", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524722621051","UserID":10005}: 5] 
+ 
+I0426 14:03:17.831748 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1d180
+
+I0426 14:03:17.831760 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1d180
+
+I0426 14:03:17.831776 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 2, "SessionID" : "tugimkzd", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524722621051","UserID":10005}]
+
+I0426 14:03:17.839536 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1d180
+
+I0426 14:03:29.250159 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1d9b0
+
+I0426 14:03:29.250493 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[159],msg[{ "WSID" : 2, "SessionID" : "xelehdin", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524722664138"}:17.83174E
+I0426 14:03:29.250500 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1d9b0
+
+I0426 14:03:29.251498 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1d9b0
+
+I0426 14:03:29.251536 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "xelehdin", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524722664138"}], tag:[0x2001]
+
+I0426 14:03:29.302429 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"xelehdin","RequestID":"1524722664138","UserID":10005,"Status":0,"WSID":2}],Tag[0xd1d9b4]
+
+I0426 14:03:29.302454 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1d9b0
+
+I0426 14:03:47.510076 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1e1e0
+
+I0426 14:03:47.510201 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[159],msg[{ "WSID" : 2, "SessionID" : "jzdtl3gg", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524722681285"}] 
+ 
+I0426 14:03:47.510207 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1e1e0
+
+I0426 14:03:47.510797 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1e1e0
+
+I0426 14:03:47.510825 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "jzdtl3gg", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524722681285"}], tag:[0x2001]
+
+I0426 14:03:47.555369 13830 LoginOutMgr.cpp:118] ManagerSrv-->WS, User:test.test@qq.com, UserId:10005 alread online, and kick it; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":131105,"SessionID":"jzdtl3gg","RequestID":"1524722681285","Status":-2,"WSID":2}],Tag[0xd1e1e4]
+
+I0426 14:03:47.555438 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"jzdtl3gg","RequestID":"1524722681285","UserID":10005,"Status":0,"WSID":2}],Tag[0xd1e1e4]
+
+I0426 14:03:47.555454 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1e1e0
+
+I0426 14:04:08.143323 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1ea10
+
+I0426 14:04:08.143510 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[159],msg[{ "WSID" : 2, "SessionID" : "ugh2c0jh", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524722700759"}] 
+ 
+I0426 14:04:08.143518 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1ea10
+
+I0426 14:04:08.144735 13830 MemPoolMgr.cpp:97] GetDataNode:0xd1ea10
+
+I0426 14:04:08.144765 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "ugh2c0jh", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524722700759"}], tag:[0x2001]
+
+I0426 14:04:08.192471 13830 LoginOutMgr.cpp:118] ManagerSrv-->WS, User:test.test@qq.com, UserId:10005 alread online, and kick it; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":131105,"SessionID":"ugh2c0jh","RequestID":"1524722700759","Status":-2,"WSID":2}],Tag[0xd1ea14]
+
+I0426 14:04:08.192492 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"ugh2c0jh","RequestID":"1524722700759","UserID":10005,"Status":0,"WSID":2}],Tag[0xd1ea14]
+
+I0426 14:04:08.192503 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd1ea10
+
+I0426 14:06:45.188482 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1f240
+
+I0426 14:06:45.188915 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3640e],len[135],msg[{ "WSID" : 2, "SessionID" : "u2qwrkva", "Tag":222222,"srcip":"192.168.0.1","SessionId":"u2qwrkva","RequestID":"1524722852640","WsId":1}u%] 
+ 
+I0426 14:06:45.188923 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1f240
+
+I0426 14:06:45.191432 13831 MemPoolMgr.cpp:97] GetDataNode:0xd1f240
+
+E0426 14:06:45.191455 13831 UserMgr.cpp:1503] ManagerProcess: don't support tag:0x3640e, data:[{ "WSID" : 2, "SessionID" : "u2qwrkva", "Tag":222222,"srcip":"192.168.0.1","SessionId":"u2qwrkva","RequestID":"1524722852640","WsId":1}]
+
+I0426 14:06:45.191537 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd1f240
+
+I0426 14:07:10.834702 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd1fa70
+
+I0426 14:07:10.834954 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "sjtzbgc2", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524722891539"}24722852640","W�] 
+ 
+I0426 14:07:10.834971 13828 MemPoolMgr.cpp:37] PushDataNode:0xd1fa70
+
+I0426 14:07:10.835001 13831 MemPoolMgr.cpp:97] GetDataNode:0xd1fa70
+
+I0426 14:07:10.835063 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "sjtzbgc2", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524722891539"}
+I0426 14:07:10.844820 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"sjtzbgc2","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"}]}],tag[0x25000]
+
+I0426 14:07:10.844843 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd1fa70
+
+I0426 14:07:18.861603 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd202a0
+
+I0426 14:07:18.880216 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x11000],len[95],msg[{ "WSID" : 2, "SessionID" : "t1u2xvla", "Tag":69632,"RequestID":"1524722895566","UserID":10005}":"152472!] 
+ 
+I0426 14:07:18.880231 13828 MemPoolMgr.cpp:37] PushDataNode:0xd202a0
+
+I0426 14:07:18.898406 13831 MemPoolMgr.cpp:97] GetDataNode:0xd202a0
+
+I0426 14:07:18.898432 13831 UserMgr.cpp:9] Send SMScode Request,json:
+I0426 14:07:18.898448 13831 UserMgr.cpp:53] WS-->Manager: SendSMS/Mail: tag:[0x11000],JSON:{ "WSID" : 2, "SessionID" : "t1u2xvla", "Tag":69632,"RequestID":"1524722895566","UserID":10005}
+I0426 14:07:18.943614 13831 UserMgr.cpp:102] ManagerSrv-->SMSMailSender, routingkey:[key.security.email.req], freesz json:[{"tag":69635,"dest":13344445555,"code":"232831","sessionID":"t1u2xvla","requestID":"1524722895566","wSID":2}],Tag[0x11003]
+
+I0426 14:07:18.943660 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd202a0
+
+I0426 14:07:47.918035 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd20ad0
+
+I0426 14:07:47.918104 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x15000],len[135],msg[{ "WSID" : 2, "SessionID" : "t1u2xvla", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"t1u2xvla","RequestID":"1524722895566"}0E
+I0426 14:07:47.918109 13828 MemPoolMgr.cpp:37] PushDataNode:0xd20ad0
+
+I0426 14:07:47.918648 13831 MemPoolMgr.cpp:97] GetDataNode:0xd20ad0
+
+I0426 14:07:47.918674 13831 UserMgr.cpp:354] WS-->Manager: DepositAddrRequest: tag:[0x15000],JSON:{ "WSID" : 2, "SessionID" : "t1u2xvla", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"t1u2xvla","RequestID":"1524722895566"}
+I0426 14:07:47.926149 13831 UserMgr.cpp:381] ManagerSrv-->MS,DepositAddrRequest, routingkey:[WebSrv.2], json:[{"Tag":86017,"UserID":10005,"SessionID":"t1u2xvla","DepsositAddr":"mkoRRf7sgzMUbnfxSBthoWL2jESwCz7qeC"}],tag[0x15000]
+
+I0426 14:07:47.926282 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd20ad0
+
+I0426 14:10:22.078299 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd21300
+
+I0426 14:10:22.078639 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x15000],len[135],msg[{ "WSID" : 2, "SessionID" : "13vm3sjt", "Tag":86016,"UserID":10005,"CoinName":"RKT","SessionID":"13vm3sjt","RequestID":"1524723046677"}lE
+I0426 14:10:22.078691 13828 MemPoolMgr.cpp:37] PushDataNode:0xd21300
+
+I0426 14:10:22.079232 13831 MemPoolMgr.cpp:97] GetDataNode:0xd21300
+
+I0426 14:10:22.079257 13831 UserMgr.cpp:354] WS-->Manager: DepositAddrRequest: tag:[0x15000],JSON:{ "WSID" : 2, "SessionID" : "13vm3sjt", "Tag":86016,"UserID":10005,"CoinName":"RKT","SessionID":"13vm3sjt","RequestID":"1524723046677"}
+I0426 14:10:22.086678 13831 UserMgr.cpp:381] ManagerSrv-->MS,DepositAddrRequest, routingkey:[WebSrv.2], json:[{"Tag":86017,"UserID":10005,"SessionID":"13vm3sjt","DepsositAddr":"0x9e7ee8fe4b6f7cea98037622744efe5ef46c603b"}],tag[0x15000]
+
+I0426 14:10:22.086738 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd21300
+
+I0426 14:11:17.288010 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd21b30
+
+I0426 14:11:17.288646 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x15000],len[135],msg[{ "WSID" : 2, "SessionID" : "13vm3sjt", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"13vm3sjt","RequestID":"1524723046677"}] 
+ 
+I0426 14:11:17.288658 13828 MemPoolMgr.cpp:37] PushDataNode:0xd21b30
+
+I0426 14:11:17.292484 13831 MemPoolMgr.cpp:97] GetDataNode:0xd21b30
+
+I0426 14:11:17.292517 13831 UserMgr.cpp:354] WS-->Manager: DepositAddrRequest: tag:[0x15000],JSON:{ "WSID" : 2, "SessionID" : "13vm3sjt", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"13vm3sjt","RequestID":"1524723046677"}
+I0426 14:11:17.300599 13831 UserMgr.cpp:381] ManagerSrv-->MS,DepositAddrRequest, routingkey:[WebSrv.2], json:[{"Tag":86017,"UserID":10005,"SessionID":"13vm3sjt","DepsositAddr":"mkoRRf7sgzMUbnfxSBthoWL2jESwCz7qeC"}],tag[0x15000]
+
+I0426 14:11:17.300640 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd21b30
+
+I0426 14:12:26.007676 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd22360
+
+I0426 14:12:26.009338 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "1k1ipbno", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723206714"}stID":"5] 
+ 
+I0426 14:12:26.009351 13828 MemPoolMgr.cpp:37] PushDataNode:0xd22360
+
+I0426 14:12:26.009373 13831 MemPoolMgr.cpp:97] GetDataNode:0xd22360
+
+I0426 14:12:26.009390 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "1k1ipbno", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723206714"}
+I0426 14:12:26.017632 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"1k1ipbno","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"}]}],tag[0x25000]
+
+I0426 14:12:26.017676 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd22360
+
+I0426 14:13:15.883337 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd22b90
+
+I0426 14:13:15.883508 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 2, "SessionID" : "nu3xhnjy", "Tag":131089,"UserID":10007,"srcip":"192.168.0.1","RequestID":"1524716671269"}Re%] 
+ 
+I0426 14:13:15.883515 13828 MemPoolMgr.cpp:37] PushDataNode:0xd22b90
+
+I0426 14:13:15.884707 13830 MemPoolMgr.cpp:97] GetDataNode:0xd22b90
+
+I0426 14:13:15.884734 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 2, "SessionID" : "nu3xhnjy", "Tag":131089,"UserID":10007,"srcip":"192.168.0.1","RequestID":"1524716671269"}]
+
+I0426 14:13:15.892897 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd22b90
+
+I0426 14:13:20.327587 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd233c0
+
+I0426 14:13:20.327664 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[168],msg[{ "WSID" : 2, "SessionID" : "nu3xhnjy", "Tag":8193,"username":"test007@qq.com","loginpassword":"123456","srcip":"192.168.0.1","UserID":null,"RequestID":"1524716671269"}E
+I0426 14:13:20.327669 13828 MemPoolMgr.cpp:37] PushDataNode:0xd233c0
+
+I0426 14:13:20.328878 13830 MemPoolMgr.cpp:97] GetDataNode:0xd233c0
+
+I0426 14:13:20.328905 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "nu3xhnjy", "Tag":8193,"username":"test007@qq.com","loginpassword":"123456","srcip":"192.168.0.1","UserID":null,"RequestID":"1524716671269"}], tag:[0x2001]
+
+I0426 14:13:20.378751 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"nu3xhnjy","RequestID":"1524716671269","UserID":10007,"Status":0,"WSID":2}],Tag[0xd233c4]
+
+I0426 14:13:20.378777 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd233c0
+
+I0426 14:13:36.826671 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd23bf0
+
+I0426 14:13:36.827102 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[187],msg[{"Tag":12291,"UserID":10007,"OrderID":423438289236459522,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":44.000000000,"Price":10.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:13:36.827111 13828 MemPoolMgr.cpp:37] PushDataNode:0xd23bf0
+
+I0426 14:13:36.828230 13829 MemPoolMgr.cpp:97] GetDataNode:0xd23bf0
+
+I0426 14:13:36.828305 13829 AssetsMgr.cpp:598] WS-->Manager: AssetsFreezeProcess: tag:[0x3003],JSON:{"Tag":12291,"UserID":10007,"OrderID":423438289236459522,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":44.000000000,"Price":10.000000000,"SrvIdentify":"manger2order_bkey"}
+I0426 14:13:36.828310 13829 AssetsMgr.cpp:613] AssetsFreezeProcess: OrderSrv-->ManagerSrv ,json:[{"Tag":12291,"UserID":10007,"OrderID":423438289236459522,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":44.000000000,"Price":10.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:13:36.828343 13829 MgrBase.cpp:146] FREEZE,UpdateSingleRow: SQL:[UPDATE user_assets SET available=Available-440.000000,frozen=frozen+440.000000 			WHERE Available>440.000000 and userid=10007 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:13:36.840626 13829 AssetsMgr.cpp:660] ManagerSrv-->C2C/OrderSrv, freesz ,routingkey:[manger2order_bkey], freesz json:[{"Tag":12292,"UserID":10007,"OrderID":423438289236459522,"Status":0}],Tag[0x3003]
+
+I0426 14:13:36.840644 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd23bf0
+
+I0426 14:13:49.614341 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd24420
+
+I0426 14:13:49.614567 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "micbm5ta", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723290374"}] 
+ 
+I0426 14:13:49.614576 13828 MemPoolMgr.cpp:37] PushDataNode:0xd24420
+
+I0426 14:13:49.614966 13831 MemPoolMgr.cpp:97] GetDataNode:0xd24420
+
+I0426 14:13:49.614989 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "micbm5ta", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723290374"}
+I0426 14:13:49.622817 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"micbm5ta","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"}]}],tag[0x25000]
+
+I0426 14:13:49.622838 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd24420
+
+I0426 14:14:32.130138 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd24c50
+
+I0426 14:14:32.130213 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "3eiif1hx", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723332860"}] 
+ 
+I0426 14:14:32.130218 13828 MemPoolMgr.cpp:37] PushDataNode:0xd24c50
+
+I0426 14:14:32.131400 13831 MemPoolMgr.cpp:97] GetDataNode:0xd24c50
+
+I0426 14:14:32.131429 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "3eiif1hx", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723332860"}
+I0426 14:14:32.138835 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"3eiif1hx","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"}]}],tag[0x25000]
+
+I0426 14:14:32.138855 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd24c50
+
+I0426 14:15:34.436117 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd25480
+
+I0426 14:15:34.436455 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "o4vmgnde", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723395208"}] 
+ 
+I0426 14:15:34.436465 13828 MemPoolMgr.cpp:37] PushDataNode:0xd25480
+
+I0426 14:15:34.437213 13831 MemPoolMgr.cpp:97] GetDataNode:0xd25480
+
+I0426 14:15:34.437237 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "o4vmgnde", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723395208"}
+I0426 14:15:34.445253 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"o4vmgnde","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"}]}],tag[0x25000]
+
+I0426 14:15:34.445329 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd25480
+
+I0426 14:17:05.713038 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd25cb0
+
+I0426 14:17:05.713193 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[186],msg[{"Tag":12291,"UserID":10005,"OrderID":423438289250156545,"Symbol":"EOS/ETH","OrderType":2,"TransType":2,"OrderNumber":44.000000000,"Price":4.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:17:05.713199 13828 MemPoolMgr.cpp:37] PushDataNode:0xd25cb0
+
+I0426 14:17:05.714025 13829 MemPoolMgr.cpp:97] GetDataNode:0xd25cb0
+
+I0426 14:17:05.714120 13829 AssetsMgr.cpp:598] WS-->Manager: AssetsFreezeProcess: tag:[0x3003],JSON:{"Tag":12291,"UserID":10005,"OrderID":423438289250156545,"Symbol":"EOS/ETH","OrderType":2,"TransType":2,"OrderNumber":44.000000000,"Price":4.000000000,"SrvIdentify":"manger2order_bkey"}
+I0426 14:17:05.714176 13829 AssetsMgr.cpp:613] AssetsFreezeProcess: OrderSrv-->ManagerSrv ,json:[{"Tag":12291,"UserID":10005,"OrderID":423438289250156545,"Symbol":"EOS/ETH","OrderType":2,"TransType":2,"OrderNumber":44.000000000,"Price":4.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:17:05.714197 13829 MgrBase.cpp:146] FREEZE,UpdateSingleRow: SQL:[UPDATE user_assets SET available=Available-176.000000,frozen=frozen+176.000000 			WHERE Available>176.000000 and userid=10005 and CoinID=(select id from Coin where CoinName = 'EOS') ;]
+
+I0426 14:17:05.727164 13829 AssetsMgr.cpp:660] ManagerSrv-->C2C/OrderSrv, freesz ,routingkey:[manger2order_bkey], freesz json:[{"Tag":12292,"UserID":10005,"OrderID":423438289250156545,"Status":0}],Tag[0x3003]
+
+I0426 14:17:05.727181 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd25cb0
+
+I0426 14:17:20.497443 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd264e0
+
+I0426 14:17:20.497509 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723501129"}] 
+ 
+I0426 14:17:20.497514 13828 MemPoolMgr.cpp:37] PushDataNode:0xd264e0
+
+I0426 14:17:20.497551 13831 MemPoolMgr.cpp:97] GetDataNode:0xd264e0
+
+I0426 14:17:20.497599 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723501129"}
+I0426 14:17:20.504870 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"nojwtxtp","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"}]}],tag[0x25000]
+
+I0426 14:17:20.504891 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd264e0
+
+I0426 14:17:44.912439 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd26d10
+
+I0426 14:17:44.912504 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x16000],len[198],msg[{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}hDE
+I0426 14:17:44.912509 13828 MemPoolMgr.cpp:37] PushDataNode:0xd26d10
+
+I0426 14:17:44.913815 13831 MemPoolMgr.cpp:97] GetDataNode:0xd26d10
+
+I0426 14:17:44.913849 13831 UserMgr.cpp:462] WS-->Manager: AddWithDrawAddr: tag:[0x16000],JSON:{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}
+I0426 14:17:44.921170 13831 MgrBase.cpp:146] ModifyPassword,UpdateSingleRow: SQL:[INSERT INTO USER_WITHDRAWADDRESS(UserID,CoinID,WithDrawAdress,Note)			VALUE(10005,(select id from Coin where CoinName='BTC'),'1111','1111')]
+
+I0426 14:17:44.930522 13831 UserMgr.cpp:499] ManagerSrv-->MS,AddWithDrawAddr, routingkey:[WebSrv.2], json:[{"Tag":90113,"UserID":10005,"SessionID":"nojwtxtp","Status":0}],tag[0x16000]
+
+I0426 14:17:44.930547 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd26d10
+
+I0426 14:17:51.164086 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd27540
+
+I0426 14:17:51.164579 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x16000],len[198],msg[{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}] 
+ 
+I0426 14:17:51.164588 13828 MemPoolMgr.cpp:37] PushDataNode:0xd27540
+
+I0426 14:17:51.166887 13831 MemPoolMgr.cpp:97] GetDataNode:0xd27540
+
+I0426 14:17:51.166919 13831 UserMgr.cpp:462] WS-->Manager: AddWithDrawAddr: tag:[0x16000],JSON:{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}
+I0426 14:17:51.174159 13831 MgrBase.cpp:146] ModifyPassword,UpdateSingleRow: SQL:[INSERT INTO USER_WITHDRAWADDRESS(UserID,CoinID,WithDrawAdress,Note)			VALUE(10005,(select id from Coin where CoinName='BTC'),'1111','1111')]
+
+I0426 14:17:51.184283 13831 UserMgr.cpp:499] ManagerSrv-->MS,AddWithDrawAddr, routingkey:[WebSrv.2], json:[{"Tag":90113,"UserID":10005,"SessionID":"nojwtxtp","Status":0}],tag[0x16000]
+
+I0426 14:17:51.184319 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd27540
+
+I0426 14:17:52.173537 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd27d70
+
+I0426 14:17:52.173967 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x16000],len[198],msg[{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}] 
+ 
+I0426 14:17:52.173976 13828 MemPoolMgr.cpp:37] PushDataNode:0xd27d70
+
+I0426 14:17:52.174782 13831 MemPoolMgr.cpp:97] GetDataNode:0xd27d70
+
+I0426 14:17:52.174809 13831 UserMgr.cpp:462] WS-->Manager: AddWithDrawAddr: tag:[0x16000],JSON:{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}
+I0426 14:17:52.182445 13831 MgrBase.cpp:146] ModifyPassword,UpdateSingleRow: SQL:[INSERT INTO USER_WITHDRAWADDRESS(UserID,CoinID,WithDrawAdress,Note)			VALUE(10005,(select id from Coin where CoinName='BTC'),'1111','1111')]
+
+I0426 14:17:52.192899 13831 UserMgr.cpp:499] ManagerSrv-->MS,AddWithDrawAddr, routingkey:[WebSrv.2], json:[{"Tag":90113,"UserID":10005,"SessionID":"nojwtxtp","Status":0}],tag[0x16000]
+
+I0426 14:17:52.192924 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd27d70
+
+I0426 14:17:52.500437 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd285a0
+
+I0426 14:17:52.500457 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x16000],len[198],msg[{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}] 
+ 
+I0426 14:17:52.500459 13828 MemPoolMgr.cpp:37] PushDataNode:0xd285a0
+
+I0426 14:17:52.500731 13831 MemPoolMgr.cpp:97] GetDataNode:0xd285a0
+
+I0426 14:17:52.500757 13831 UserMgr.cpp:462] WS-->Manager: AddWithDrawAddr: tag:[0x16000],JSON:{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}
+I0426 14:17:52.508044 13831 MgrBase.cpp:146] ModifyPassword,UpdateSingleRow: SQL:[INSERT INTO USER_WITHDRAWADDRESS(UserID,CoinID,WithDrawAdress,Note)			VALUE(10005,(select id from Coin where CoinName='BTC'),'1111','1111')]
+
+I0426 14:17:52.518352 13831 UserMgr.cpp:499] ManagerSrv-->MS,AddWithDrawAddr, routingkey:[WebSrv.2], json:[{"Tag":90113,"UserID":10005,"SessionID":"nojwtxtp","Status":0}],tag[0x16000]
+
+I0426 14:17:52.518375 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd285a0
+
+I0426 14:17:52.923290 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd28dd0
+
+I0426 14:17:52.923307 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x16000],len[198],msg[{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}] 
+ 
+I0426 14:17:52.923311 13828 MemPoolMgr.cpp:37] PushDataNode:0xd28dd0
+
+I0426 14:17:52.923326 13831 MemPoolMgr.cpp:97] GetDataNode:0xd28dd0
+
+I0426 14:17:52.923362 13831 UserMgr.cpp:462] WS-->Manager: AddWithDrawAddr: tag:[0x16000],JSON:{ "WSID" : 2, "SessionID" : "nojwtxtp", "Tag":90112,"UserID":10005,"CoinName":"BTC","MobilePhone":"13798525642","SmsCode":"324132526","WithdrawAddr":"1111","Note":"1111","RequestID":"1524723501129"}
+I0426 14:17:52.930582 13831 MgrBase.cpp:146] ModifyPassword,UpdateSingleRow: SQL:[INSERT INTO USER_WITHDRAWADDRESS(UserID,CoinID,WithDrawAdress,Note)			VALUE(10005,(select id from Coin where CoinName='BTC'),'1111','1111')]
+
+I0426 14:17:52.940912 13831 UserMgr.cpp:499] ManagerSrv-->MS,AddWithDrawAddr, routingkey:[WebSrv.2], json:[{"Tag":90113,"UserID":10005,"SessionID":"nojwtxtp","Status":0}],tag[0x16000]
+
+I0426 14:17:52.940935 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd28dd0
+
+I0426 14:17:54.284271 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd29600
+
+I0426 14:17:54.284514 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "cfkikemn", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723535073"}] 
+ 
+I0426 14:17:54.284521 13828 MemPoolMgr.cpp:37] PushDataNode:0xd29600
+
+I0426 14:17:54.284538 13831 MemPoolMgr.cpp:97] GetDataNode:0xd29600
+
+I0426 14:17:54.284554 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "cfkikemn", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723535073"}
+I0426 14:17:54.312017 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"cfkikemn","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 14:17:54.312094 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd29600
+
+I0426 14:19:09.443388 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd29e30
+
+I0426 14:19:09.443591 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10005,"OrderID":423438289258283009,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":1.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:19:09.443599 13828 MemPoolMgr.cpp:37] PushDataNode:0xd29e30
+
+I0426 14:19:09.444722 13829 MemPoolMgr.cpp:97] GetDataNode:0xd29e30
+
+I0426 14:19:09.444749 13829 AssetsMgr.cpp:598] WS-->Manager: AssetsFreezeProcess: tag:[0x3003],JSON:{"Tag":12291,"UserID":10005,"OrderID":423438289258283009,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":1.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}
+I0426 14:19:09.444752 13829 AssetsMgr.cpp:613] AssetsFreezeProcess: OrderSrv-->ManagerSrv ,json:[{"Tag":12291,"UserID":10005,"OrderID":423438289258283009,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":1.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:19:09.444759 13829 MgrBase.cpp:146] FREEZE,UpdateSingleRow: SQL:[UPDATE user_assets SET available=Available-1.000000,frozen=frozen+1.000000 			WHERE Available>1.000000 and userid=10005 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:19:09.458029 13829 AssetsMgr.cpp:660] ManagerSrv-->C2C/OrderSrv, freesz ,routingkey:[manger2order_bkey], freesz json:[{"Tag":12292,"UserID":10005,"OrderID":423438289258283009,"Status":0}],Tag[0x3003]
+
+I0426 14:19:09.458048 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd29e30
+
+I0426 14:19:25.035372 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2a660
+
+I0426 14:19:25.036125 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[186],msg[{"Tag":12291,"UserID":10005,"OrderID":423438289259331585,"Symbol":"RKT/BTC","OrderType":2,"TransType":2,"OrderNumber":11.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:19:25.036136 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2a660
+
+I0426 14:19:25.036798 13829 MemPoolMgr.cpp:97] GetDataNode:0xd2a660
+
+I0426 14:19:25.036909 13829 AssetsMgr.cpp:598] WS-->Manager: AssetsFreezeProcess: tag:[0x3003],JSON:{"Tag":12291,"UserID":10005,"OrderID":423438289259331585,"Symbol":"RKT/BTC","OrderType":2,"TransType":2,"OrderNumber":11.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}
+I0426 14:19:25.036931 13829 AssetsMgr.cpp:613] AssetsFreezeProcess: OrderSrv-->ManagerSrv ,json:[{"Tag":12291,"UserID":10005,"OrderID":423438289259331585,"Symbol":"RKT/BTC","OrderType":2,"TransType":2,"OrderNumber":11.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:19:25.037117 13829 MgrBase.cpp:146] FREEZE,UpdateSingleRow: SQL:[UPDATE user_assets SET available=Available-11.000000,frozen=frozen+11.000000 			WHERE Available>11.000000 and userid=10005 and CoinID=(select id from Coin where CoinName = 'RKT') ;]
+
+I0426 14:19:25.048902 13829 AssetsMgr.cpp:660] ManagerSrv-->C2C/OrderSrv, freesz ,routingkey:[manger2order_bkey], freesz json:[{"Tag":12292,"UserID":10005,"OrderID":423438289259331585,"Status":0}],Tag[0x3003]
+
+I0426 14:19:25.048921 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd2a660
+
+I0426 14:19:25.805694 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2ae90
+
+I0426 14:19:25.805711 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3009],len[255],msg[{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289258283009,"BidUserID":10005,"DealNum":1.000000000,"DealPrice":1.000000000,"TransactTime":"1524694825","SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:19:25.805714 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2ae90
+
+I0426 14:19:25.806571 13829 MemPoolMgr.cpp:97] GetDataNode:0xd2ae90
+
+I0426 14:19:25.806599 13829 AssetsMgr.cpp:73] WS-->Manager: AssetsTradeSucessProcess: tag:[0x3009],JSON:{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289258283009,"BidUserID":10005,"DealNum":1.000000000,"DealPrice":1.000000000,"TransactTime":"1524694825","SrvIdentify":"manger2order_bkey"}
+I0426 14:19:25.814699 13829 AssetsMgr.cpp:114] OrderSrv-->ManagerSrv:AssetsTradeSucessProcess, json:[{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289258283009,"BidUserID":10005,"DealNum":1.000000000,"DealPrice":1.000000000,"TransactTime":"1524694825","SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:19:25.814719 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total-1.000000, frozen=frozen - 1.000000 		WHERE userid=10005 and CoinID=(select id from Coin where CoinName = 'RKT') ;]
+
+I0426 14:19:25.823410 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total+1.000000, Available=Available + 1.000000 		WHERE userid=10005 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:19:25.831974 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total+1.000000, Available=Available + 1.000000 		WHERE userid=10005 and CoinID=(select id from Coin where CoinName = 'RKT') ;]
+
+I0426 14:19:25.840549 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total-1.000000,frozen=frozen - 1.000000 		WHERE userid=10005 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:19:25.849052 13829 AssetsMgr.cpp:170] OrderSrv-->ManagerSrv,AssetsTradeSucessProcess,Sucess,json:[{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289258283009,"BidUserID":10005,"DealNum":1.000000000,"DealPrice":1.000000000,"TransactTime":"1524694825","SrvIdentify":"manger2order_bkey"}]
+
+I0426 14:19:25.859702 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd2ae90
+
+I0426 14:22:14.408870 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2b6c0
+
+I0426 14:22:14.408947 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "xzmpqicq", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723794846"}] 
+ 
+I0426 14:22:14.408952 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2b6c0
+
+I0426 14:22:14.409885 13831 MemPoolMgr.cpp:97] GetDataNode:0xd2b6c0
+
+I0426 14:22:14.409909 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "xzmpqicq", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524723794846"}
+I0426 14:22:14.419723 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"xzmpqicq","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 14:22:14.419814 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd2b6c0
+
+I0426 14:22:17.917106 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2bef0
+
+I0426 14:22:17.917194 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 2, "SessionID" : "qkszqitb", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524723797747","UserID":10005}] 
+ 
+I0426 14:22:17.917199 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2bef0
+
+I0426 14:22:17.917214 13830 MemPoolMgr.cpp:97] GetDataNode:0xd2bef0
+
+I0426 14:22:17.917232 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 2, "SessionID" : "qkszqitb", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524723797747","UserID":10005}]
+
+I0426 14:22:17.925757 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd2bef0
+
+I0426 14:22:19.381256 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2c720
+
+I0426 14:22:19.381362 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[117],msg[{ "WSID" : 2, "SessionID" : "qkszqitb", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524723797747","UserID":null}] 
+ 
+I0426 14:22:19.381368 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2c720
+
+I0426 14:22:19.381441 13830 MemPoolMgr.cpp:97] GetDataNode:0xd2c720
+
+I0426 14:22:19.381475 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 2, "SessionID" : "qkszqitb", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524723797747","UserID":null}]
+
+E0426 14:22:19.381480 13830 LoginOutMgr.cpp:139] LoginOut:UserId  is error, json:[{ "WSID" : 2, "SessionID" : "qkszqitb", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524723797747","UserID":null}] 
+ 
+I0426 14:22:19.381521 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd2c720
+
+I0426 14:24:12.059603 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2cf50
+
+I0426 14:24:12.059672 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[173],msg[{ "WSID" : 2, "SessionID" : "rumfm5kc", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524723903518"}28 MemPoolME
+I0426 14:24:12.059677 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2cf50
+
+I0426 14:24:12.059909 13830 MemPoolMgr.cpp:97] GetDataNode:0xd2cf50
+
+I0426 14:24:12.059938 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "rumfm5kc", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524723903518"}], tag:[0x2001]
+
+I0426 14:24:12.108181 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"rumfm5kc","RequestID":"1524723903518","UserID":10005,"Status":0,"WSID":2}],Tag[0xd2cf54]
+
+I0426 14:24:12.108255 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd2cf50
+
+I0426 14:24:14.527803 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2d780
+
+I0426 14:24:14.528175 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 2, "SessionID" : "rumfm5kc", "Tag":131089,"UserID":10005,"srcip":"192.168.0.1","RequestID":"1524723903518"}] 
+ 
+I0426 14:24:14.528189 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2d780
+
+I0426 14:24:14.529944 13830 MemPoolMgr.cpp:97] GetDataNode:0xd2d780
+
+I0426 14:24:14.529974 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 2, "SessionID" : "rumfm5kc", "Tag":131089,"UserID":10005,"srcip":"192.168.0.1","RequestID":"1524723903518"}]
+
+I0426 14:24:14.537955 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd2d780
+
+I0426 14:24:37.941182 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2dfb0
+
+I0426 14:24:37.941257 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x1001],len[120],msg[{ "WSID" : 2, "SessionID" : "rv0jfh01", "Tag":4097,"Email":"alibase@163.com","Password":"123456","RequestID":"rv0jfh01"}%] 
+ 
+I0426 14:24:37.941262 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2dfb0
+
+I0426 14:24:37.941315 13831 MemPoolMgr.cpp:97] GetDataNode:0xd2dfb0
+
+I0426 14:24:37.941359 13831 UserMgr.cpp:1086] WS-->Manager: UserRegister: tag:[0x1001],JSON:{ "WSID" : 2, "SessionID" : "rv0jfh01", "Tag":4097,"Email":"alibase@163.com","Password":"123456","RequestID":"rv0jfh01"}
+I0426 14:24:37.941366 13831 MgrBase.cpp:146] UserRegister,UpdateSingleRow: SQL:[INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('alibase@163.com','123456',sysdate(),0,1,'123456') ;]
+
+I0426 14:24:37.957476 13831 MgrBase.cpp:146] UserRegister build test data,UpdateSingleRow: SQL:[insert  into user_assets		(UserID,CoinID,Total,Available,Frozen,Valuation) 		values 		(10013,1,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10013,2,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10013,3,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10013,4,'200000.000000000','200000.000000000','0.000000000','200000.000000000'),		(10013,5,'300000.000000000','300000.000000000','0.000000000','300000.000000000'),		(10013,6,'400000.000000000','400000.000000000','0.000000000','400000.000000000'),		(10013,7,'400000.000000000','400000.000000000','0.000000000','400000.000000000'); ]
+
+E0426 14:24:37.967085 13831 MgrBase.cpp:174] UserRegister build test data: Update many rows:rows:7,SQL:[insert  into user_assets		(UserID,CoinID,Total,Available,Frozen,Valuation) 		values 		(10013,1,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10013,2,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10013,3,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10013,4,'200000.000000000','200000.000000000','0.000000000','200000.000000000'),		(10013,5,'300000.000000000','300000.000000000','0.000000000','300000.000000000'),		(10013,6,'400000.000000000','400000.000000000','0.000000000','400000.000000000'),		(10013,7,'400000.000000000','400000.000000000','0.000000000','400000.000000000'); ]
+
+I0426 14:24:37.967252 13831 UserMgr.cpp:1133] ManagerSrv-->MS,UserRegister, routingkey:[WebSrv.2], json:[{"Tag":65553, "UserID":10013, "SessionID":"rv0jfh01","Status":"0"}],tag[0x1001]
+
+I0426 14:24:37.967260 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd2dfb0
+
+I0426 14:26:08.211365 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2e7e0
+
+I0426 14:26:08.211535 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[173],msg[{ "WSID" : 2, "SessionID" : "rumfm5kc", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524723903518"}28 MemPoolME
+I0426 14:26:08.211542 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2e7e0
+
+I0426 14:26:08.212134 13830 MemPoolMgr.cpp:97] GetDataNode:0xd2e7e0
+
+I0426 14:26:08.212162 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "rumfm5kc", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524723903518"}], tag:[0x2001]
+
+I0426 14:26:08.264834 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"rumfm5kc","RequestID":"1524723903518","UserID":10005,"Status":0,"WSID":2}],Tag[0xd2e7e4]
+
+I0426 14:26:08.265043 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd2e7e0
+
+I0426 14:27:55.046612 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2f010
+
+I0426 14:27:55.046710 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[186],msg[{"Tag":12291,"UserID":10007,"OrderID":423438289292754945,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":4.000000000,"Price":10.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:27:55.046716 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2f010
+
+I0426 14:27:55.046746 13829 MemPoolMgr.cpp:97] GetDataNode:0xd2f010
+
+I0426 14:27:55.046782 13829 AssetsMgr.cpp:598] WS-->Manager: AssetsFreezeProcess: tag:[0x3003],JSON:{"Tag":12291,"UserID":10007,"OrderID":423438289292754945,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":4.000000000,"Price":10.000000000,"SrvIdentify":"manger2order_bkey"}
+I0426 14:27:55.047086 13829 AssetsMgr.cpp:613] AssetsFreezeProcess: OrderSrv-->ManagerSrv ,json:[{"Tag":12291,"UserID":10007,"OrderID":423438289292754945,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":4.000000000,"Price":10.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:27:55.047096 13829 MgrBase.cpp:146] FREEZE,UpdateSingleRow: SQL:[UPDATE user_assets SET available=Available-40.000000,frozen=frozen+40.000000 			WHERE Available>40.000000 and userid=10007 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:27:55.058362 13829 AssetsMgr.cpp:660] ManagerSrv-->C2C/OrderSrv, freesz ,routingkey:[manger2order_bkey], freesz json:[{"Tag":12292,"UserID":10007,"OrderID":423438289292754945,"Status":0}],Tag[0x3003]
+
+I0426 14:27:55.058382 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd2f010
+
+I0426 14:27:55.669878 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd2f840
+
+I0426 14:27:55.669894 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3009],len[256],msg[{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289292754945,"BidUserID":10007,"DealNum":4.000000000,"DealPrice":10.000000000,"TransactTime":"1524695335","SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:27:55.669898 13828 MemPoolMgr.cpp:37] PushDataNode:0xd2f840
+
+I0426 14:27:55.670779 13829 MemPoolMgr.cpp:97] GetDataNode:0xd2f840
+
+I0426 14:27:55.670830 13829 AssetsMgr.cpp:73] WS-->Manager: AssetsTradeSucessProcess: tag:[0x3009],JSON:{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289292754945,"BidUserID":10007,"DealNum":4.000000000,"DealPrice":10.000000000,"TransactTime":"1524695335","SrvIdentify":"manger2order_bkey"}
+I0426 14:27:55.678854 13829 AssetsMgr.cpp:114] OrderSrv-->ManagerSrv:AssetsTradeSucessProcess, json:[{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289292754945,"BidUserID":10007,"DealNum":4.000000000,"DealPrice":10.000000000,"TransactTime":"1524695335","SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:27:55.678875 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total-40.000000, frozen=frozen - 40.000000 		WHERE userid=10005 and CoinID=(select id from Coin where CoinName = 'RKT') ;]
+
+I0426 14:27:55.687233 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total+40.000000, Available=Available + 40.000000 		WHERE userid=10005 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:27:55.695474 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total+40.000000, Available=Available + 40.000000 		WHERE userid=10007 and CoinID=(select id from Coin where CoinName = 'RKT') ;]
+
+I0426 14:27:55.704234 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total-40.000000,frozen=frozen - 40.000000 		WHERE userid=10007 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:27:55.713829 13829 AssetsMgr.cpp:170] OrderSrv-->ManagerSrv,AssetsTradeSucessProcess,Sucess,json:[{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289292754945,"BidUserID":10007,"DealNum":4.000000000,"DealPrice":10.000000000,"TransactTime":"1524695335","SrvIdentify":"manger2order_bkey"}]
+
+I0426 14:27:55.724339 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd2f840
+
+I0426 14:29:31.871024 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd30070
+
+I0426 14:29:31.871358 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 2, "SessionID" : "gryyirl4", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524724230202","UserID":10005}] 
+ 
+I0426 14:29:31.871366 13828 MemPoolMgr.cpp:37] PushDataNode:0xd30070
+
+I0426 14:29:31.872313 13830 MemPoolMgr.cpp:97] GetDataNode:0xd30070
+
+I0426 14:29:31.872334 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 2, "SessionID" : "gryyirl4", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524724230202","UserID":10005}]
+
+I0426 14:29:31.879659 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd30070
+
+I0426 14:29:32.671700 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd308a0
+
+I0426 14:29:32.671741 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[117],msg[{ "WSID" : 2, "SessionID" : "gryyirl4", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524724230202","UserID":null}] 
+ 
+I0426 14:29:32.671744 13828 MemPoolMgr.cpp:37] PushDataNode:0xd308a0
+
+I0426 14:29:32.672406 13830 MemPoolMgr.cpp:97] GetDataNode:0xd308a0
+
+I0426 14:29:32.672443 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 2, "SessionID" : "gryyirl4", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524724230202","UserID":null}]
+
+E0426 14:29:32.672448 13830 LoginOutMgr.cpp:139] LoginOut:UserId  is error, json:[{ "WSID" : 2, "SessionID" : "gryyirl4", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524724230202","UserID":null}] 
+ 
+I0426 14:29:32.672500 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd308a0
+
+I0426 14:29:36.706341 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd310d0
+
+I0426 14:29:36.706432 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[187],msg[{"Tag":12291,"UserID":10007,"OrderID":423438289299374081,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":42.000000000,"Price":10.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:29:36.706439 13828 MemPoolMgr.cpp:37] PushDataNode:0xd310d0
+
+I0426 14:29:36.706452 13829 MemPoolMgr.cpp:97] GetDataNode:0xd310d0
+
+I0426 14:29:36.706473 13829 AssetsMgr.cpp:598] WS-->Manager: AssetsFreezeProcess: tag:[0x3003],JSON:{"Tag":12291,"UserID":10007,"OrderID":423438289299374081,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":42.000000000,"Price":10.000000000,"SrvIdentify":"manger2order_bkey"}
+I0426 14:29:36.706476 13829 AssetsMgr.cpp:613] AssetsFreezeProcess: OrderSrv-->ManagerSrv ,json:[{"Tag":12291,"UserID":10007,"OrderID":423438289299374081,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":42.000000000,"Price":10.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:29:36.706852 13829 MgrBase.cpp:146] FREEZE,UpdateSingleRow: SQL:[UPDATE user_assets SET available=Available-420.000000,frozen=frozen+420.000000 			WHERE Available>420.000000 and userid=10007 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:29:36.717797 13829 AssetsMgr.cpp:660] ManagerSrv-->C2C/OrderSrv, freesz ,routingkey:[manger2order_bkey], freesz json:[{"Tag":12292,"UserID":10007,"OrderID":423438289299374081,"Status":0}],Tag[0x3003]
+
+I0426 14:29:36.717814 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd310d0
+
+I0426 14:29:37.687261 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd31900
+
+I0426 14:29:37.687283 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3009],len[256],msg[{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289299374081,"BidUserID":10007,"DealNum":6.000000000,"DealPrice":10.000000000,"TransactTime":"1524695437","SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:29:37.687286 13828 MemPoolMgr.cpp:37] PushDataNode:0xd31900
+
+I0426 14:29:37.688092 13829 MemPoolMgr.cpp:97] GetDataNode:0xd31900
+
+I0426 14:29:37.688138 13829 AssetsMgr.cpp:73] WS-->Manager: AssetsTradeSucessProcess: tag:[0x3009],JSON:{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289299374081,"BidUserID":10007,"DealNum":6.000000000,"DealPrice":10.000000000,"TransactTime":"1524695437","SrvIdentify":"manger2order_bkey"}
+I0426 14:29:37.697204 13829 AssetsMgr.cpp:114] OrderSrv-->ManagerSrv:AssetsTradeSucessProcess, json:[{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289299374081,"BidUserID":10007,"DealNum":6.000000000,"DealPrice":10.000000000,"TransactTime":"1524695437","SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:29:37.697229 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total-60.000000, frozen=frozen - 60.000000 		WHERE userid=10005 and CoinID=(select id from Coin where CoinName = 'RKT') ;]
+
+I0426 14:29:37.705844 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total+60.000000, Available=Available + 60.000000 		WHERE userid=10005 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:29:37.714135 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total+60.000000, Available=Available + 60.000000 		WHERE userid=10007 and CoinID=(select id from Coin where CoinName = 'RKT') ;]
+
+I0426 14:29:37.723114 13829 MgrBase.cpp:146] AssetsTradeSucessProcess,UpdateSingleRow: SQL:[UPDATE user_assets SET  Total=Total-60.000000,frozen=frozen - 60.000000 		WHERE userid=10007 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:29:37.731178 13829 AssetsMgr.cpp:170] OrderSrv-->ManagerSrv,AssetsTradeSucessProcess,Sucess,json:[{"Tag":12297,"Symbol":"RKT/BTC","TransType":0,"AskOrderID":423438289259331585,"AskUserID":10005,"BidOrderID":423438289299374081,"BidUserID":10007,"DealNum":6.000000000,"DealPrice":10.000000000,"TransactTime":"1524695437","SrvIdentify":"manger2order_bkey"}]
+
+I0426 14:29:37.740422 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd31900
+
+I0426 14:30:08.113222 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd32130
+
+I0426 14:30:08.113296 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[159],msg[{ "WSID" : 2, "SessionID" : "vjbhwza2", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524724239060"}00000000,E
+I0426 14:30:08.113312 13828 MemPoolMgr.cpp:37] PushDataNode:0xd32130
+
+I0426 14:30:08.114015 13830 MemPoolMgr.cpp:97] GetDataNode:0xd32130
+
+I0426 14:30:08.114055 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "vjbhwza2", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","RequestID":"1524724239060"}], tag:[0x2001]
+
+I0426 14:30:08.160926 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"vjbhwza2","RequestID":"1524724239060","UserID":10005,"Status":0,"WSID":2}],Tag[0xd32134]
+
+I0426 14:30:08.160954 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd32130
+
+I0426 14:36:48.281165 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd32960
+
+I0426 14:36:48.281662 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[187],msg[{"Tag":12291,"UserID":10007,"OrderID":423438289327685633,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":10.000000000,"Price":34.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:36:48.281673 13828 MemPoolMgr.cpp:37] PushDataNode:0xd32960
+
+I0426 14:36:48.282893 13829 MemPoolMgr.cpp:97] GetDataNode:0xd32960
+
+I0426 14:36:48.282922 13829 AssetsMgr.cpp:598] WS-->Manager: AssetsFreezeProcess: tag:[0x3003],JSON:{"Tag":12291,"UserID":10007,"OrderID":423438289327685633,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":10.000000000,"Price":34.000000000,"SrvIdentify":"manger2order_bkey"}
+I0426 14:36:48.282927 13829 AssetsMgr.cpp:613] AssetsFreezeProcess: OrderSrv-->ManagerSrv ,json:[{"Tag":12291,"UserID":10007,"OrderID":423438289327685633,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":10.000000000,"Price":34.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:36:48.282933 13829 MgrBase.cpp:146] FREEZE,UpdateSingleRow: SQL:[UPDATE user_assets SET available=Available-340.000000,frozen=frozen+340.000000 			WHERE Available>340.000000 and userid=10007 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:36:48.296525 13829 AssetsMgr.cpp:660] ManagerSrv-->C2C/OrderSrv, freesz ,routingkey:[manger2order_bkey], freesz json:[{"Tag":12292,"UserID":10007,"OrderID":423438289327685633,"Status":0}],Tag[0x3003]
+
+I0426 14:36:48.296543 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd32960
+
+I0426 14:39:46.543969 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd33190
+
+I0426 14:39:46.544203 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10007,"OrderID":423438289339351041,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":4.000000000,"Price":3.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:39:46.544212 13828 MemPoolMgr.cpp:37] PushDataNode:0xd33190
+
+I0426 14:39:46.545513 13829 MemPoolMgr.cpp:97] GetDataNode:0xd33190
+
+I0426 14:39:46.545544 13829 AssetsMgr.cpp:598] WS-->Manager: AssetsFreezeProcess: tag:[0x3003],JSON:{"Tag":12291,"UserID":10007,"OrderID":423438289339351041,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":4.000000000,"Price":3.000000000,"SrvIdentify":"manger2order_bkey"}
+I0426 14:39:46.545548 13829 AssetsMgr.cpp:613] AssetsFreezeProcess: OrderSrv-->ManagerSrv ,json:[{"Tag":12291,"UserID":10007,"OrderID":423438289339351041,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":4.000000000,"Price":3.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 14:39:46.545555 13829 MgrBase.cpp:146] FREEZE,UpdateSingleRow: SQL:[UPDATE user_assets SET available=Available-12.000000,frozen=frozen+12.000000 			WHERE Available>12.000000 and userid=10007 and CoinID=(select id from Coin where CoinName = 'BTC') ;]
+
+I0426 14:39:46.556826 13829 AssetsMgr.cpp:660] ManagerSrv-->C2C/OrderSrv, freesz ,routingkey:[manger2order_bkey], freesz json:[{"Tag":12292,"UserID":10007,"OrderID":423438289339351041,"Status":0}],Tag[0x3003]
+
+I0426 14:39:46.556843 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd33190
+
+I0426 14:39:49.701920 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd339c0
+
+I0426 14:39:49.701979 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[173],msg[{ "WSID" : 2, "SessionID" : "x3eys202", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524724271397"}rder_bkey"}E
+I0426 14:39:49.701984 13828 MemPoolMgr.cpp:37] PushDataNode:0xd339c0
+
+I0426 14:39:49.702586 13830 MemPoolMgr.cpp:97] GetDataNode:0xd339c0
+
+I0426 14:39:49.702618 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "x3eys202", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524724271397"}], tag:[0x2001]
+
+I0426 14:39:49.749235 13830 LoginOutMgr.cpp:118] ManagerSrv-->WS, User:test.test@qq.com, UserId:10005 alread online, and kick it; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":131105,"SessionID":"x3eys202","RequestID":"1524724271397","Status":-2,"WSID":2}],Tag[0xd339c4]
+
+I0426 14:39:49.749351 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"x3eys202","RequestID":"1524724271397","UserID":10005,"Status":0,"WSID":2}],Tag[0xd339c4]
+
+I0426 14:39:49.749431 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd339c0
+
+I0426 14:45:52.008829 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd341f0
+
+I0426 14:45:52.009320 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "3re0u1lx", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524725212844"}] 
+ 
+I0426 14:45:52.009330 13828 MemPoolMgr.cpp:37] PushDataNode:0xd341f0
+
+I0426 14:45:52.010144 13831 MemPoolMgr.cpp:97] GetDataNode:0xd341f0
+
+I0426 14:45:52.010170 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "3re0u1lx", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524725212844"}
+I0426 14:45:52.017663 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"3re0u1lx","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 14:45:52.017686 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd341f0
+
+I0426 14:45:55.009454 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd34a20
+
+I0426 14:45:55.009582 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x18000],len[118],msg[{ "WSID" : 2, "SessionID" : "dme1r3ts", "Tag":98304,"UserID":10005,"SessionID":"dme1r3ts","RequestID":"1524725215909"}] 
+ 
+I0426 14:45:55.009588 13828 MemPoolMgr.cpp:37] PushDataNode:0xd34a20
+
+I0426 14:45:55.010484 13831 MemPoolMgr.cpp:97] GetDataNode:0xd34a20
+
+I0426 14:45:55.010511 13831 UserMgr.cpp:675] WS-->Manager: GetBankAccountList: tag:[0x18000],JSON:{ "WSID" : 2, "SessionID" : "dme1r3ts", "Tag":98304,"UserID":10005,"SessionID":"dme1r3ts","RequestID":"1524725215909"}
+I0426 14:45:55.018193 13831 UserMgr.cpp:742] ManagerSrv-->MS,GetBankAccountList, routingkey:[WebSrv.2], json:[{"Tag":98305,"UserID":10005,"SessionID":"dme1r3ts","BankList":		[{"AccountID":4,"BankName":"中国银行","CardNumber":"231423542436767","OpenBank":"805311800","UserName":"李四"},{"AccountID":8,"BankName":"dsafads","CardNumber":"2341235","OpenBank":"805312088","UserName":"adsf"},{"AccountID":9,"BankName":"11q","CardNumber":"222","OpenBank":"805312808","UserName":"11"},{"AccountID":10,"BankName":"111","CardNumber":"111","OpenBank":"805329816","UserName":"111"},{"AccountID":11,"BankName":"111","CardNumber":"11","OpenBank":"805330104","UserName":"111"},{"AccountID":12,"BankName":"111","CardNumber":"11","OpenBank":"805330392","UserName":"111"}]}],tag[0x18000]
+
+I0426 14:45:55.018250 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd34a20
+
+I0426 14:46:11.111394 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd35250
+
+I0426 14:46:11.111461 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "3rixbcxf", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524725231924"}] 
+ 
+I0426 14:46:11.111466 13828 MemPoolMgr.cpp:37] PushDataNode:0xd35250
+
+I0426 14:46:11.111479 13831 MemPoolMgr.cpp:97] GetDataNode:0xd35250
+
+I0426 14:46:11.111495 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "3rixbcxf", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524725231924"}
+I0426 14:46:11.119159 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"3rixbcxf","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 14:46:11.119182 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd35250
+
+I0426 14:46:48.653641 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd35a80
+
+I0426 14:46:48.654675 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x15000],len[135],msg[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":86016,"UserID":10005,"CoinName":"XRB","SessionID":"yxiwv4r2","RequestID":"1524725267985"}0E
+I0426 14:46:48.654690 13828 MemPoolMgr.cpp:37] PushDataNode:0xd35a80
+
+I0426 14:46:48.656448 13831 MemPoolMgr.cpp:97] GetDataNode:0xd35a80
+
+I0426 14:46:48.656484 13831 UserMgr.cpp:354] WS-->Manager: DepositAddrRequest: tag:[0x15000],JSON:{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":86016,"UserID":10005,"CoinName":"XRB","SessionID":"yxiwv4r2","RequestID":"1524725267985"}
+I0426 14:46:48.664288 13831 UserMgr.cpp:381] ManagerSrv-->MS,DepositAddrRequest, routingkey:[WebSrv.2], json:[{"Tag":86017,"UserID":10005,"SessionID":"yxiwv4r2","DepsositAddr":"0x9e7ee8fe4b6f7cea98037622744efe5ef46c603b"}],tag[0x15000]
+
+I0426 14:46:48.664309 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd35a80
+
+I0426 14:47:02.005705 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd362b0
+
+I0426 14:47:02.005818 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x21000],len[173],msg[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"11","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}] 
+ 
+I0426 14:47:02.005823 13828 MemPoolMgr.cpp:37] PushDataNode:0xd362b0
+
+I0426 14:47:02.007313 13829 MemPoolMgr.cpp:97] GetDataNode:0xd362b0
+
+I0426 14:47:02.007345 13829 AssetsMgr.cpp:268] UserWithDrawProcess: Recv json:[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"11","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}]
+
+I0426 14:47:02.007349 13829 AssetsMgr.cpp:277] WS-->Manager: UserWithDrawProcess: tag:[0x21000],JSON:{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"11","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}
+E0426 14:47:02.017752 13829 MgrBase.cpp:132] UserWithDrawProcess: Query result is 0, QuerySql:Select MobilePhoneNum from User where ID = 10005 and TradePassword='11';
+E0426 14:47:02.017911 13829 AssetsMgr.cpp:287] UserWithDrawProcess: ,Get mobilephone fail by userid and tradepwd,  rows:[0],SQL:[139630348284464] 
+ 
+I0426 14:47:02.018106 13829 AssetsMgr.cpp:16] SendFailMsg --> WS-MQ ,routingkey:[WebSrv.2], json:[{"Tag":135169,"SessionID":"yxiwv4r2","Status":-1}], data:[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"11","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}],Tag[0x21001]
+
+I0426 14:47:02.018121 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd362b0
+
+I0426 14:47:09.928794 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd36ae0
+
+I0426 14:47:09.928944 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x21000],len[177],msg[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"123456","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}] 
+ 
+I0426 14:47:09.928952 13828 MemPoolMgr.cpp:37] PushDataNode:0xd36ae0
+
+I0426 14:47:09.930150 13829 MemPoolMgr.cpp:97] GetDataNode:0xd36ae0
+
+I0426 14:47:09.930177 13829 AssetsMgr.cpp:268] UserWithDrawProcess: Recv json:[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"123456","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}]
+
+I0426 14:47:09.930181 13829 AssetsMgr.cpp:277] WS-->Manager: UserWithDrawProcess: tag:[0x21000],JSON:{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"123456","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}
+E0426 14:47:09.948657 13829 MgrBase.cpp:132] UserWithDrawProcess: Query result is 0, QuerySql:Select MobilePhoneNum from User where ID = 10005 and TradePassword='123456';
+E0426 14:47:09.948706 13829 AssetsMgr.cpp:287] UserWithDrawProcess: ,Get mobilephone fail by userid and tradepwd,  rows:[0],SQL:[139630348284464] 
+ 
+I0426 14:47:09.948781 13829 AssetsMgr.cpp:16] SendFailMsg --> WS-MQ ,routingkey:[WebSrv.2], json:[{"Tag":135169,"SessionID":"yxiwv4r2","Status":-1}], data:[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"123456","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}],Tag[0x21001]
+
+I0426 14:47:09.948791 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd36ae0
+
+I0426 14:47:15.581164 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd37310
+
+I0426 14:47:15.581753 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x21000],len[178],msg[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"1234567","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}] 
+ 
+I0426 14:47:15.581761 13828 MemPoolMgr.cpp:37] PushDataNode:0xd37310
+
+I0426 14:47:15.582597 13829 MemPoolMgr.cpp:97] GetDataNode:0xd37310
+
+I0426 14:47:15.582623 13829 AssetsMgr.cpp:268] UserWithDrawProcess: Recv json:[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"1234567","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}]
+
+I0426 14:47:15.582625 13829 AssetsMgr.cpp:277] WS-->Manager: UserWithDrawProcess: tag:[0x21000],JSON:{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"1234567","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}
+I0426 14:47:15.607591 13829 MgrBase.cpp:146] UserWithDrawProcess: Ethereum blockchain coin  withdraw to useraddr from pool ,UpdateSingleRow: SQL:[update EXCHANGE_ASSERTSPOOL set Available=Available-11.000000 frozen=frozen+11.000000   			WHERE Available>11.000000 and  CoinId=(select id from Coin where CoinName ='XRB');]
+
+E0426 14:47:15.616246 13829 MgrBase.cpp:151] UserWithDrawProcess: Ethereum blockchain coin  withdraw to useraddr from pool : QuerySql:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'frozen=frozen+11.000000   			WHERE Available>11.000000 and  CoinId=(select id fr' at line 1,con=1|sql=update EXCHANGE_ASSERTSPOOL set Available=Available-11.000000 frozen=frozen+11.000000   			WHERE Available>11.000000 and  CoinId=(select id from Coin where CoinName ='XRB');
+I0426 14:47:15.624436 13829 AssetsMgr.cpp:16] SendFailMsg --> WS-MQ ,routingkey:[WebSrv.2], json:[{"Tag":135169,"SessionID":"yxiwv4r2","Status":-1}], data:[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"1234567","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}],Tag[0x21001]
+
+I0426 14:47:15.624460 13829 MemPoolMgr.cpp:46] PushUsedNode:0xd37310
+
+E0426 14:47:15.624464 13829 AssetsMgr.cpp:730] AssetsProcess Exit !
+I0426 14:47:15.641075 13829 tnode.cpp:286] TNode Close ...
+
+I0426 14:47:19.962139 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd37b40
+
+I0426 14:47:19.962215 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x21000],len[178],msg[{ "WSID" : 2, "SessionID" : "yxiwv4r2", "Tag":135168,"UserID":10005,"CoinName":"XRB","Amount":11,"TradePwd":"1234567","DestAddr":"111","SmsCode":"11","RequestID":"1524725267985"}] 
+ 
+I0426 14:47:19.962220 13828 MemPoolMgr.cpp:37] PushDataNode:0xd37b40
+
+I0426 14:47:42.583461 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd38370
+
+I0426 14:47:42.583525 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x26000],len[91],msg[{ "WSID" : 2, "SessionID" : "hqnzcc1n", "Tag":155648,"UserID":10005,"RequestID":"testtest"}135168,"U24725231924"�] 
+ 
+I0426 14:47:42.583530 13828 MemPoolMgr.cpp:37] PushDataNode:0xd38370
+
+I0426 14:47:42.583602 13831 MemPoolMgr.cpp:97] GetDataNode:0xd38370
+
+I0426 14:47:42.583665 13831 UserMgr.cpp:1365] WS-->Manager: GetKYCResource: tag:[0x26000],JSON:{ "WSID" : 2, "SessionID" : "hqnzcc1n", "Tag":155648,"UserID":10005,"RequestID":"testtest"}
+I0426 14:47:42.590924 13831 UserMgr.cpp:1401] ManagerSrv-->WS,GetKYCResource, routingkey:[WebSrv.2], json:[{"Tag":155649,"UserID":10005,"SessionID":"hqnzcc1n", "RequestID":"testtest",	"Country":"China","Firstname":"bb", "Secondname":"aa", "Idtype":"idCard", "Idno":"123456789", "Image1":"1223333.jpg", "Image2":"123456.jpg", "Image3":"123456.jpg" }],tag[0x26000]
+
+I0426 14:47:42.590946 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd38370
+
+I0426 14:47:51.109678 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd38ba0
+
+I0426 14:47:51.110188 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x26000],len[91],msg[{ "WSID" : 2, "SessionID" : "imdz2311", "Tag":155648,"UserID":10005,"RequestID":"testtest"}135168,"U24725231924"�] 
+ 
+I0426 14:47:51.110198 13828 MemPoolMgr.cpp:37] PushDataNode:0xd38ba0
+
+I0426 14:47:51.110544 13831 MemPoolMgr.cpp:97] GetDataNode:0xd38ba0
+
+I0426 14:47:51.110564 13831 UserMgr.cpp:1365] WS-->Manager: GetKYCResource: tag:[0x26000],JSON:{ "WSID" : 2, "SessionID" : "imdz2311", "Tag":155648,"UserID":10005,"RequestID":"testtest"}
+I0426 14:47:51.117894 13831 UserMgr.cpp:1401] ManagerSrv-->WS,GetKYCResource, routingkey:[WebSrv.2], json:[{"Tag":155649,"UserID":10005,"SessionID":"imdz2311", "RequestID":"testtest",	"Country":"China","Firstname":"bb", "Secondname":"aa", "Idtype":"idCard", "Idno":"123456789", "Image1":"1223333.jpg", "Image2":"123456.jpg", "Image3":"123456.jpg" }],tag[0x26000]
+
+I0426 14:47:51.117960 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd38ba0
+
+I0426 15:10:01.466589 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd393d0
+
+I0426 15:10:01.466678 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 3, "SessionID" : "xq4sezvk", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524726662624"}] 
+ 
+I0426 15:10:01.466683 13828 MemPoolMgr.cpp:37] PushDataNode:0xd393d0
+
+I0426 15:10:01.466702 13831 MemPoolMgr.cpp:97] GetDataNode:0xd393d0
+
+I0426 15:10:01.466720 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 3, "SessionID" : "xq4sezvk", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524726662624"}
+I0426 15:10:01.474581 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.3], json:[{"Tag":151553,"UserID":10005,"SessionID":"xq4sezvk","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 15:10:01.474602 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd393d0
+
+I0426 15:10:03.584172 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd39c00
+
+I0426 15:10:03.584266 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 3, "SessionID" : "uwqhad0g", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524726664729"}SID" : u] 
+ 
+I0426 15:10:03.584338 13828 MemPoolMgr.cpp:37] PushDataNode:0xd39c00
+
+I0426 15:10:03.585476 13831 MemPoolMgr.cpp:97] GetDataNode:0xd39c00
+
+I0426 15:10:03.585502 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 3, "SessionID" : "uwqhad0g", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524726664729"}
+I0426 15:10:03.593050 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.3], json:[{"Tag":151553,"UserID":10005,"SessionID":"uwqhad0g","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 15:10:03.593071 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd39c00
+
+I0426 15:10:22.042827 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3a430
+
+I0426 15:10:22.044225 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x15000],len[135],msg[{ "WSID" : 3, "SessionID" : "mvfvc3ms", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"mvfvc3ms","RequestID":"1524726680929"}2u] 
+ 
+I0426 15:10:22.044239 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3a430
+
+I0426 15:10:22.044611 13831 MemPoolMgr.cpp:97] GetDataNode:0xd3a430
+
+I0426 15:10:22.044634 13831 UserMgr.cpp:354] WS-->Manager: DepositAddrRequest: tag:[0x15000],JSON:{ "WSID" : 3, "SessionID" : "mvfvc3ms", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"mvfvc3ms","RequestID":"1524726680929"}
+I0426 15:10:22.052218 13831 UserMgr.cpp:381] ManagerSrv-->MS,DepositAddrRequest, routingkey:[WebSrv.3], json:[{"Tag":86017,"UserID":10005,"SessionID":"mvfvc3ms","DepsositAddr":"mkoRRf7sgzMUbnfxSBthoWL2jESwCz7qeC"}],tag[0x15000]
+
+I0426 15:10:22.052239 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd3a430
+
+I0426 15:10:40.865290 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3ac60
+
+I0426 15:10:40.865339 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x15000],len[135],msg[{ "WSID" : 3, "SessionID" : "ar1eqolx", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"ar1eqolx","RequestID":"1524726698078"}2u] 
+ 
+I0426 15:10:40.865345 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3ac60
+
+I0426 15:10:40.883545 13831 MemPoolMgr.cpp:97] GetDataNode:0xd3ac60
+
+I0426 15:10:40.883580 13831 UserMgr.cpp:354] WS-->Manager: DepositAddrRequest: tag:[0x15000],JSON:{ "WSID" : 3, "SessionID" : "ar1eqolx", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"ar1eqolx","RequestID":"1524726698078"}
+I0426 15:10:40.893754 13831 UserMgr.cpp:381] ManagerSrv-->MS,DepositAddrRequest, routingkey:[WebSrv.3], json:[{"Tag":86017,"UserID":10005,"SessionID":"ar1eqolx","DepsositAddr":"mkoRRf7sgzMUbnfxSBthoWL2jESwCz7qeC"}],tag[0x15000]
+
+I0426 15:10:40.893774 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd3ac60
+
+I0426 15:11:19.379639 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3b490
+
+I0426 15:11:19.379715 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 3, "SessionID" : "k2uirgcg", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524726740349"}stID":"u] 
+ 
+I0426 15:11:19.379721 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3b490
+
+I0426 15:11:19.382977 13831 MemPoolMgr.cpp:97] GetDataNode:0xd3b490
+
+I0426 15:11:19.383013 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 3, "SessionID" : "k2uirgcg", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524726740349"}
+I0426 15:11:19.390233 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.3], json:[{"Tag":151553,"UserID":10005,"SessionID":"k2uirgcg","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 15:11:19.390254 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd3b490
+
+I0426 15:11:23.421881 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3bcc0
+
+I0426 15:11:23.421954 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 3, "SessionID" : "qwodh1co", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524726744597"}stID":"u] 
+ 
+I0426 15:11:23.421959 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3bcc0
+
+I0426 15:11:23.422142 13831 MemPoolMgr.cpp:97] GetDataNode:0xd3bcc0
+
+I0426 15:11:23.422163 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 3, "SessionID" : "qwodh1co", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524726744597"}
+I0426 15:11:23.429793 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.3], json:[{"Tag":151553,"UserID":10005,"SessionID":"qwodh1co","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 15:11:23.429816 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd3bcc0
+
+I0426 15:14:18.356581 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3c4f0
+
+I0426 15:14:18.357311 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x18000],len[118],msg[{ "WSID" : 3, "SessionID" : "idr1cw2z", "Tag":98304,"UserID":10005,"SessionID":"idr1cw2z","requestId":"1524726919429"}:"u] 
+ 
+I0426 15:14:18.357322 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3c4f0
+
+I0426 15:14:18.358570 13831 MemPoolMgr.cpp:97] GetDataNode:0xd3c4f0
+
+I0426 15:14:18.358592 13831 UserMgr.cpp:675] WS-->Manager: GetBankAccountList: tag:[0x18000],JSON:{ "WSID" : 3, "SessionID" : "idr1cw2z", "Tag":98304,"UserID":10005,"SessionID":"idr1cw2z","requestId":"1524726919429"}
+I0426 15:14:18.366801 13831 UserMgr.cpp:742] ManagerSrv-->MS,GetBankAccountList, routingkey:[WebSrv.3], json:[{"Tag":98305,"UserID":10005,"SessionID":"idr1cw2z","BankList":		[{"AccountID":4,"BankName":"中国银行","CardNumber":"231423542436767","OpenBank":"805311752","UserName":"李四"},{"AccountID":8,"BankName":"dsafads","CardNumber":"2341235","OpenBank":"805312040","UserName":"adsf"},{"AccountID":9,"BankName":"11q","CardNumber":"222","OpenBank":"805313480","UserName":"11"},{"AccountID":10,"BankName":"111","CardNumber":"111","OpenBank":"805330168","UserName":"111"},{"AccountID":11,"BankName":"111","CardNumber":"11","OpenBank":"805330456","UserName":"111"},{"AccountID":12,"BankName":"111","CardNumber":"11","OpenBank":"805330744","UserName":"111"}]}],tag[0x18000]
+
+I0426 15:14:18.366823 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd3c4f0
+
+I0426 15:18:52.712052 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3cd20
+
+I0426 15:18:52.712874 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 3, "SessionID" : "01gtz0fc", "Tag":131089,"UserID":10005,"srcip":"192.168.0.1","RequestID":"1524727191109"}:"u] 
+ 
+I0426 15:18:52.712888 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3cd20
+
+I0426 15:18:52.713574 13830 MemPoolMgr.cpp:97] GetDataNode:0xd3cd20
+
+I0426 15:18:52.713605 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 3, "SessionID" : "01gtz0fc", "Tag":131089,"UserID":10005,"srcip":"192.168.0.1","RequestID":"1524727191109"}]
+
+I0426 15:18:52.721887 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd3cd20
+
+I0426 15:29:17.841704 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3d550
+
+I0426 15:29:17.841783 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x26000],len[91],msg[{ "WSID" : 3, "SessionID" : "zf3l5132", "Tag":155648,"UserID":10005,"RequestID":"testtest"}RequestID":"1u] 
+ 
+I0426 15:29:17.841787 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3d550
+
+I0426 15:29:17.843192 13831 MemPoolMgr.cpp:97] GetDataNode:0xd3d550
+
+I0426 15:29:17.843216 13831 UserMgr.cpp:1365] WS-->Manager: GetKYCResource: tag:[0x26000],JSON:{ "WSID" : 3, "SessionID" : "zf3l5132", "Tag":155648,"UserID":10005,"RequestID":"testtest"}
+I0426 15:29:17.850780 13831 UserMgr.cpp:1401] ManagerSrv-->WS,GetKYCResource, routingkey:[WebSrv.3], json:[{"Tag":155649,"UserID":10005,"SessionID":"zf3l5132", "RequestID":"testtest",	"Country":"China","Firstname":"bb", "Secondname":"aa", "Idtype":"idCard", "Idno":"123456789", "Image1":"1223333.jpg", "Image2":"123456.jpg", "Image3":"123456.jpg" }],tag[0x26000]
+
+I0426 15:29:17.850802 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd3d550
+
+I0426 15:42:40.757341 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3dd80
+
+I0426 15:42:40.757938 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10005,"OrderID":423438289586749441,"Symbol":"ETH/BTC","OrderType":2,"TransType":1,"OrderNumber":1.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 15:42:40.757963 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3dd80
+
+I0426 15:42:47.626883 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3e5b0
+
+I0426 15:42:47.626935 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10005,"OrderID":423438289587142657,"Symbol":"ETH/BTC","OrderType":2,"TransType":1,"OrderNumber":2.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 15:42:47.626940 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3e5b0
+
+I0426 15:43:37.414901 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3ede0
+
+I0426 15:43:37.414970 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3005],len[185],msg[{"Tag":12293,"UserID":10007,"OrderID":423438289339351041,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":4.000000000,"Price":3.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 15:43:37.414975 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3ede0
+
+I0426 15:43:37.416220 13831 MemPoolMgr.cpp:97] GetDataNode:0xd3ede0
+
+E0426 15:43:37.416234 13831 UserMgr.cpp:1503] ManagerProcess: don't support tag:0x3005, data:[{"Tag":12293,"UserID":10007,"OrderID":423438289339351041,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":4.000000000,"Price":3.000000000,"SrvIdentify":"manger2order_bkey"}]
+
+I0426 15:43:37.416283 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd3ede0
+
+I0426 15:57:44.278353 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3f610
+
+I0426 15:57:44.278549 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x15000],len[135],msg[{ "WSID" : 2, "SessionID" : "1sidm50h", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"1sidm50h","RequestID":"1524729523355"}eu] 
+ 
+I0426 15:57:44.278556 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3f610
+
+I0426 15:57:44.278591 13831 MemPoolMgr.cpp:97] GetDataNode:0xd3f610
+
+I0426 15:57:44.278612 13831 UserMgr.cpp:354] WS-->Manager: DepositAddrRequest: tag:[0x15000],JSON:{ "WSID" : 2, "SessionID" : "1sidm50h", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"1sidm50h","RequestID":"1524729523355"}
+I0426 15:57:44.286558 13831 UserMgr.cpp:381] ManagerSrv-->MS,DepositAddrRequest, routingkey:[WebSrv.2], json:[{"Tag":86017,"UserID":10005,"SessionID":"1sidm50h","DepsositAddr":"mkoRRf7sgzMUbnfxSBthoWL2jESwCz7qeC"}],tag[0x15000]
+
+I0426 15:57:44.286900 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd3f610
+
+I0426 15:57:48.541366 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd3fe40
+
+I0426 15:57:48.541540 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "5olozjrl", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524729530061"}stID":"u] 
+ 
+I0426 15:57:48.541546 13828 MemPoolMgr.cpp:37] PushDataNode:0xd3fe40
+
+I0426 15:57:48.542795 13831 MemPoolMgr.cpp:97] GetDataNode:0xd3fe40
+
+I0426 15:57:48.543314 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "5olozjrl", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524729530061"}
+I0426 15:57:48.550689 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"5olozjrl","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 15:57:48.550709 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd3fe40
+
+I0426 15:57:50.788920 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd40670
+
+I0426 15:57:50.790493 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "3eha2xrq", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524729532311"}stID":"u] 
+ 
+I0426 15:57:50.790505 13828 MemPoolMgr.cpp:37] PushDataNode:0xd40670
+
+I0426 15:57:50.795478 13831 MemPoolMgr.cpp:97] GetDataNode:0xd40670
+
+I0426 15:57:50.795512 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "3eha2xrq", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524729532311"}
+I0426 15:57:50.806807 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"3eha2xrq","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 15:57:50.806831 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd40670
+
+I0426 15:57:52.411859 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd40ea0
+
+I0426 15:57:52.411938 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x18000],len[118],msg[{ "WSID" : 2, "SessionID" : "vumqjcu2", "Tag":98304,"UserID":10005,"SessionID":"vumqjcu2","requestId":"1524729533935"}:"u] 
+ 
+I0426 15:57:52.411943 13828 MemPoolMgr.cpp:37] PushDataNode:0xd40ea0
+
+I0426 15:57:52.412721 13831 MemPoolMgr.cpp:97] GetDataNode:0xd40ea0
+
+I0426 15:57:52.412745 13831 UserMgr.cpp:675] WS-->Manager: GetBankAccountList: tag:[0x18000],JSON:{ "WSID" : 2, "SessionID" : "vumqjcu2", "Tag":98304,"UserID":10005,"SessionID":"vumqjcu2","requestId":"1524729533935"}
+I0426 15:57:52.420176 13831 UserMgr.cpp:742] ManagerSrv-->MS,GetBankAccountList, routingkey:[WebSrv.2], json:[{"Tag":98305,"UserID":10005,"SessionID":"vumqjcu2","BankList":		[{"AccountID":4,"BankName":"中国银行","CardNumber":"231423542436767","OpenBank":"805311896","UserName":"李四"},{"AccountID":8,"BankName":"dsafads","CardNumber":"2341235","OpenBank":"805312184","UserName":"adsf"},{"AccountID":9,"BankName":"11q","CardNumber":"222","OpenBank":"805330072","UserName":"11"},{"AccountID":10,"BankName":"111","CardNumber":"111","OpenBank":"805330360","UserName":"111"},{"AccountID":11,"BankName":"111","CardNumber":"11","OpenBank":"805330648","UserName":"111"},{"AccountID":12,"BankName":"111","CardNumber":"11","OpenBank":"805330936","UserName":"111"}]}],tag[0x18000]
+
+I0426 15:57:52.420198 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd40ea0
+
+I0426 15:58:04.618154 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd416d0
+
+I0426 15:58:04.618255 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x25000],len[113],msg[{ "WSID" : 2, "SessionID" : "4bco2mr1", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524729546122"}935"}:"u] 
+ 
+I0426 15:58:04.618261 13828 MemPoolMgr.cpp:37] PushDataNode:0xd416d0
+
+I0426 15:58:04.618784 13831 MemPoolMgr.cpp:97] GetDataNode:0xd416d0
+
+I0426 15:58:04.618808 13831 UserMgr.cpp:1245] WS-->Manager: GetWithdrawAddrList: tag:[0x25000],JSON:{ "WSID" : 2, "SessionID" : "4bco2mr1", "Tag":151552,"UserID":10005,"CoinName":"ALL","RequestID":"1524729546122"}
+I0426 15:58:04.626453 13831 UserMgr.cpp:1316] ManagerSrv-->MS,GetWithdrawAddrList, routingkey:[WebSrv.2], json:[{"Tag":151553,"UserID":10005,"SessionID":"4bco2mr1","AddrList":		[{"CoinName":"BTC","addr":"111","Notes":"aaa"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"123","Notes":"aqw"},{ "CoinName":"BTC" ,"addr":"111","Notes":"111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"},{ "CoinName":"BTC" ,"addr":"1111","Notes":"1111"}]}],tag[0x25000]
+
+I0426 15:58:04.626477 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd416d0
+
+I0426 15:59:11.382424 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd41f00
+
+I0426 15:59:11.382748 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x15000],len[135],msg[{ "WSID" : 2, "SessionID" : "ncm1v1fa", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"ncm1v1fa","RequestID":"1524729611632"}] 
+ 
+I0426 15:59:11.382757 13828 MemPoolMgr.cpp:37] PushDataNode:0xd41f00
+
+I0426 15:59:11.383610 13831 MemPoolMgr.cpp:97] GetDataNode:0xd41f00
+
+I0426 15:59:11.383641 13831 UserMgr.cpp:354] WS-->Manager: DepositAddrRequest: tag:[0x15000],JSON:{ "WSID" : 2, "SessionID" : "ncm1v1fa", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"ncm1v1fa","RequestID":"1524729611632"}
+I0426 15:59:11.390903 13831 UserMgr.cpp:381] ManagerSrv-->MS,DepositAddrRequest, routingkey:[WebSrv.2], json:[{"Tag":86017,"UserID":10005,"SessionID":"ncm1v1fa","DepsositAddr":"mkoRRf7sgzMUbnfxSBthoWL2jESwCz7qeC"}],tag[0x15000]
+
+I0426 15:59:11.390923 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd41f00
+
+I0426 16:07:31.895066 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd42730
+
+I0426 16:07:31.895135 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x1001],len[124],msg[{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}729611632"}] 
+ 
+I0426 16:07:31.895140 13828 MemPoolMgr.cpp:37] PushDataNode:0xd42730
+
+I0426 16:07:31.895164 13831 MemPoolMgr.cpp:97] GetDataNode:0xd42730
+
+I0426 16:07:31.895208 13831 UserMgr.cpp:1086] WS-->Manager: UserRegister: tag:[0x1001],JSON:{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}
+I0426 16:07:31.895215 13831 MgrBase.cpp:146] UserRegister,UpdateSingleRow: SQL:[INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;]
+
+I0426 16:07:31.905431 13831 MgrBase.cpp:146] UserRegister build test data,UpdateSingleRow: SQL:[insert  into user_assets		(UserID,CoinID,Total,Available,Frozen,Valuation) 		values 		(10014,1,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10014,2,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10014,3,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10014,4,'200000.000000000','200000.000000000','0.000000000','200000.000000000'),		(10014,5,'300000.000000000','300000.000000000','0.000000000','300000.000000000'),		(10014,6,'400000.000000000','400000.000000000','0.000000000','400000.000000000'),		(10014,7,'400000.000000000','400000.000000000','0.000000000','400000.000000000'); ]
+
+E0426 16:07:31.915570 13831 MgrBase.cpp:174] UserRegister build test data: Update many rows:rows:7,SQL:[insert  into user_assets		(UserID,CoinID,Total,Available,Frozen,Valuation) 		values 		(10014,1,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10014,2,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10014,3,'100000.000000000','100000.000000000','0.000000000','100000.000000000'),		(10014,4,'200000.000000000','200000.000000000','0.000000000','200000.000000000'),		(10014,5,'300000.000000000','300000.000000000','0.000000000','300000.000000000'),		(10014,6,'400000.000000000','400000.000000000','0.000000000','400000.000000000'),		(10014,7,'400000.000000000','400000.000000000','0.000000000','400000.000000000'); ]
+
+I0426 16:07:31.915895 13831 UserMgr.cpp:1133] ManagerSrv-->MS,UserRegister, routingkey:[WebSrv.1], json:[{"Tag":65553, "UserID":10014, "SessionID":"xrmy0o41","Status":"0"}],tag[0x1001]
+
+I0426 16:07:31.915905 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd42730
+
+I0426 16:07:32.369405 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd42f60
+
+I0426 16:07:32.369426 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x1001],len[124],msg[{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}729611632"}] 
+ 
+I0426 16:07:32.369431 13828 MemPoolMgr.cpp:37] PushDataNode:0xd42f60
+
+I0426 16:07:32.370226 13831 MemPoolMgr.cpp:97] GetDataNode:0xd42f60
+
+I0426 16:07:32.370250 13831 UserMgr.cpp:1086] WS-->Manager: UserRegister: tag:[0x1001],JSON:{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}
+I0426 16:07:32.370254 13831 MgrBase.cpp:146] UserRegister,UpdateSingleRow: SQL:[INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;]
+
+E0426 16:07:32.380229 13831 MgrBase.cpp:151] UserRegister: QuerySql:Duplicate entry '894616049@qq.com' for key 'UserName',con=1|sql=INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;
+I0426 16:07:32.380373 13831 UserMgr.cpp:1133] ManagerSrv-->MS,UserRegister, routingkey:[WebSrv.1], json:[{"Tag":65553, "UserID":-1, "SessionID":"xrmy0o41","Status":"-1"}],tag[0x1001]
+
+I0426 16:07:32.380380 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd42f60
+
+I0426 16:07:32.559177 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd43790
+
+I0426 16:07:32.559264 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x1001],len[124],msg[{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}729611632"}] 
+ 
+I0426 16:07:32.559269 13828 MemPoolMgr.cpp:37] PushDataNode:0xd43790
+
+I0426 16:07:32.559480 13831 MemPoolMgr.cpp:97] GetDataNode:0xd43790
+
+I0426 16:07:32.559504 13831 UserMgr.cpp:1086] WS-->Manager: UserRegister: tag:[0x1001],JSON:{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}
+I0426 16:07:32.559507 13831 MgrBase.cpp:146] UserRegister,UpdateSingleRow: SQL:[INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;]
+
+E0426 16:07:32.570817 13831 MgrBase.cpp:151] UserRegister: QuerySql:Duplicate entry '894616049@qq.com' for key 'UserName',con=1|sql=INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;
+I0426 16:07:32.571342 13831 UserMgr.cpp:1133] ManagerSrv-->MS,UserRegister, routingkey:[WebSrv.1], json:[{"Tag":65553, "UserID":-1, "SessionID":"xrmy0o41","Status":"-1"}],tag[0x1001]
+
+I0426 16:07:32.571367 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd43790
+
+I0426 16:07:32.759820 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd43fc0
+
+I0426 16:07:32.759837 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x1001],len[124],msg[{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}729611632"}] 
+ 
+I0426 16:07:32.759841 13828 MemPoolMgr.cpp:37] PushDataNode:0xd43fc0
+
+I0426 16:07:32.760175 13831 MemPoolMgr.cpp:97] GetDataNode:0xd43fc0
+
+I0426 16:07:32.760200 13831 UserMgr.cpp:1086] WS-->Manager: UserRegister: tag:[0x1001],JSON:{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}
+I0426 16:07:32.760205 13831 MgrBase.cpp:146] UserRegister,UpdateSingleRow: SQL:[INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;]
+
+E0426 16:07:32.802608 13831 MgrBase.cpp:151] UserRegister: QuerySql:Duplicate entry '894616049@qq.com' for key 'UserName',con=1|sql=INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;
+I0426 16:07:32.802708 13831 UserMgr.cpp:1133] ManagerSrv-->MS,UserRegister, routingkey:[WebSrv.1], json:[{"Tag":65553, "UserID":-1, "SessionID":"xrmy0o41","Status":"-1"}],tag[0x1001]
+
+I0426 16:07:32.802716 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd43fc0
+
+I0426 16:07:32.966487 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd447f0
+
+I0426 16:07:32.967243 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x1001],len[124],msg[{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}729611632"}] 
+ 
+I0426 16:07:32.967258 13828 MemPoolMgr.cpp:37] PushDataNode:0xd447f0
+
+I0426 16:07:32.968211 13831 MemPoolMgr.cpp:97] GetDataNode:0xd447f0
+
+I0426 16:07:32.968242 13831 UserMgr.cpp:1086] WS-->Manager: UserRegister: tag:[0x1001],JSON:{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}
+I0426 16:07:32.968246 13831 MgrBase.cpp:146] UserRegister,UpdateSingleRow: SQL:[INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;]
+
+E0426 16:07:32.977742 13831 MgrBase.cpp:151] UserRegister: QuerySql:Duplicate entry '894616049@qq.com' for key 'UserName',con=1|sql=INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;
+I0426 16:07:32.978075 13831 UserMgr.cpp:1133] ManagerSrv-->MS,UserRegister, routingkey:[WebSrv.1], json:[{"Tag":65553, "UserID":-1, "SessionID":"xrmy0o41","Status":"-1"}],tag[0x1001]
+
+I0426 16:07:32.978086 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd447f0
+
+I0426 16:07:33.182520 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd45020
+
+I0426 16:07:33.182536 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x1001],len[124],msg[{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}729611632"}] 
+ 
+I0426 16:07:33.182539 13828 MemPoolMgr.cpp:37] PushDataNode:0xd45020
+
+I0426 16:07:33.183171 13831 MemPoolMgr.cpp:97] GetDataNode:0xd45020
+
+I0426 16:07:33.183194 13831 UserMgr.cpp:1086] WS-->Manager: UserRegister: tag:[0x1001],JSON:{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}
+I0426 16:07:33.183198 13831 MgrBase.cpp:146] UserRegister,UpdateSingleRow: SQL:[INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;]
+
+E0426 16:07:33.192600 13831 MgrBase.cpp:151] UserRegister: QuerySql:Duplicate entry '894616049@qq.com' for key 'UserName',con=1|sql=INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;
+I0426 16:07:33.192694 13831 UserMgr.cpp:1133] ManagerSrv-->MS,UserRegister, routingkey:[WebSrv.1], json:[{"Tag":65553, "UserID":-1, "SessionID":"xrmy0o41","Status":"-1"}],tag[0x1001]
+
+I0426 16:07:33.192703 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd45020
+
+I0426 16:07:33.375305 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd45850
+
+I0426 16:07:33.375324 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x1001],len[124],msg[{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}729611632"}] 
+ 
+I0426 16:07:33.375326 13828 MemPoolMgr.cpp:37] PushDataNode:0xd45850
+
+I0426 16:07:33.377167 13831 MemPoolMgr.cpp:97] GetDataNode:0xd45850
+
+I0426 16:07:33.377194 13831 UserMgr.cpp:1086] WS-->Manager: UserRegister: tag:[0x1001],JSON:{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}
+I0426 16:07:33.377198 13831 MgrBase.cpp:146] UserRegister,UpdateSingleRow: SQL:[INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;]
+
+E0426 16:07:33.386896 13831 MgrBase.cpp:151] UserRegister: QuerySql:Duplicate entry '894616049@qq.com' for key 'UserName',con=1|sql=INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;
+I0426 16:07:33.387012 13831 UserMgr.cpp:1133] ManagerSrv-->MS,UserRegister, routingkey:[WebSrv.1], json:[{"Tag":65553, "UserID":-1, "SessionID":"xrmy0o41","Status":"-1"}],tag[0x1001]
+
+I0426 16:07:33.387040 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd45850
+
+I0426 16:07:33.582710 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd46080
+
+I0426 16:07:33.582729 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x1001],len[124],msg[{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}729611632"}] 
+ 
+I0426 16:07:33.582732 13828 MemPoolMgr.cpp:37] PushDataNode:0xd46080
+
+I0426 16:07:33.584151 13831 MemPoolMgr.cpp:97] GetDataNode:0xd46080
+
+I0426 16:07:33.584179 13831 UserMgr.cpp:1086] WS-->Manager: UserRegister: tag:[0x1001],JSON:{ "WSID" : 1, "SessionID" : "xrmy0o41", "Tag":4097,"Email":"894616049@qq.com","Password":"123456qqq","RequestID":"xrmy0o41"}
+I0426 16:07:33.584183 13831 MgrBase.cpp:146] UserRegister,UpdateSingleRow: SQL:[INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;]
+
+E0426 16:07:33.593677 13831 MgrBase.cpp:151] UserRegister: QuerySql:Duplicate entry '894616049@qq.com' for key 'UserName',con=1|sql=INSERT INTO USER(UserName,loginPassword,RegisterTime,UserType,Status,TradePassword) value('894616049@qq.com','123456qqq',sysdate(),0,1,'123456qqq') ;
+I0426 16:07:33.594497 13831 UserMgr.cpp:1133] ManagerSrv-->MS,UserRegister, routingkey:[WebSrv.1], json:[{"Tag":65553, "UserID":-1, "SessionID":"xrmy0o41","Status":"-1"}],tag[0x1001]
+
+I0426 16:07:33.594521 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd46080
+
+I0426 16:12:49.753738 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd468b0
+
+I0426 16:12:49.753860 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[167],msg[{ "WSID" : 1, "SessionID" : "5d42kans", "Tag":8193,"username":"894616049@qq.com","loginpassword":"123","srcip":"192.168.0.1","UserID":null,"RequestID":"1524730413477"}0u] 
+ 
+I0426 16:12:49.753901 13828 MemPoolMgr.cpp:37] PushDataNode:0xd468b0
+
+I0426 16:12:49.754132 13830 MemPoolMgr.cpp:97] GetDataNode:0xd468b0
+
+I0426 16:12:49.754155 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 1, "SessionID" : "5d42kans", "Tag":8193,"username":"894616049@qq.com","loginpassword":"123","srcip":"192.168.0.1","UserID":null,"RequestID":"1524730413477"}], tag:[0x2001]
+
+E0426 16:12:49.761476 13830 MgrBase.cpp:132] Login db check : Query result is 0, QuerySql:SELECT id, loginpassword from user WHERE username='894616049@qq.com' and loginpassword='123';
+E0426 16:12:49.761536 13830 LoginOutMgr.cpp:83] Login Query :SELECT id, loginpassword from user WHERE username='894616049@qq.com' and loginpassword='123';,return row:0,[]
+
+I0426 16:12:49.761613 13830 LoginOutMgr.cpp:88] ManagerSrv-->WS,Send Login fail msg; routingkey:[WebSrv.1],json:[{"Tag":8194,"SessionID":"5d42kans","RequestID":"1524730413477","Status":-1,"WSID":1}],recv json:[{ "WSID" : 1, "SessionID" : "5d42kans", "Tag":8193,"username":"894616049@qq.com","loginpassword":"123","srcip":"192.168.0.1","UserID":null,"RequestID":"1524730413477"}],Tag[0x2001]
+
+I0426 16:12:49.761623 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd468b0
+
+I0426 16:12:58.547721 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd470e0
+
+I0426 16:12:58.547789 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[173],msg[{ "WSID" : 1, "SessionID" : "5d42kans", "Tag":8193,"username":"894616049@qq.com","loginpassword":"123456qqq","srcip":"192.168.0.1","UserID":null,"RequestID":"1524730413477"}] 
+ 
+I0426 16:12:58.547794 13828 MemPoolMgr.cpp:37] PushDataNode:0xd470e0
+
+I0426 16:12:58.548836 13830 MemPoolMgr.cpp:97] GetDataNode:0xd470e0
+
+I0426 16:12:58.548892 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 1, "SessionID" : "5d42kans", "Tag":8193,"username":"894616049@qq.com","loginpassword":"123456qqq","srcip":"192.168.0.1","UserID":null,"RequestID":"1524730413477"}], tag:[0x2001]
+
+I0426 16:12:58.612824 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.1],json:[%],recv json:[{"Tag":8194,"SessionID":"5d42kans","RequestID":"1524730413477","UserID":10014,"Status":0,"WSID":1}],Tag[0xd470e4]
+
+I0426 16:12:58.612851 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd470e0
+
+I0426 16:14:01.667248 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd47910
+
+I0426 16:14:01.667562 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10014,"OrderID":423438289710022658,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":4.000000000,"Price":2.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 16:14:01.667570 13828 MemPoolMgr.cpp:37] PushDataNode:0xd47910
+
+I0426 16:24:51.528316 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd48140
+
+I0426 16:24:51.528410 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[173],msg[{ "WSID" : 1, "SessionID" : "rvffnua1", "Tag":8193,"username":"894616049@qq.com","loginpassword":"123456qqq","srcip":"192.168.0.1","UserID":null,"RequestID":"1524731122880"}rder_bkey"}u] 
+ 
+I0426 16:24:51.528415 13828 MemPoolMgr.cpp:37] PushDataNode:0xd48140
+
+I0426 16:24:51.528514 13830 MemPoolMgr.cpp:97] GetDataNode:0xd48140
+
+I0426 16:24:51.528559 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 1, "SessionID" : "rvffnua1", "Tag":8193,"username":"894616049@qq.com","loginpassword":"123456qqq","srcip":"192.168.0.1","UserID":null,"RequestID":"1524731122880"}], tag:[0x2001]
+
+I0426 16:24:51.573810 13830 LoginOutMgr.cpp:118] ManagerSrv-->WS, User:894616049@qq.com, UserId:10014 alread online, and kick it; routingkey:[WebSrv.1],json:[%],recv json:[{"Tag":131105,"SessionID":"rvffnua1","RequestID":"1524731122880","Status":-2,"WSID":1}],Tag[0xd48144]
+
+I0426 16:24:51.573971 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.1],json:[%],recv json:[{"Tag":8194,"SessionID":"rvffnua1","RequestID":"1524731122880","UserID":10014,"Status":0,"WSID":1}],Tag[0xd48144]
+
+I0426 16:24:51.574064 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd48140
+
+I0426 16:24:56.342052 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd48970
+
+I0426 16:24:56.342109 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10005,"OrderID":423438289752883202,"Symbol":"LTC/BTC","OrderType":2,"TransType":1,"OrderNumber":1.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 16:24:56.342115 13828 MemPoolMgr.cpp:37] PushDataNode:0xd48970
+
+I0426 16:25:09.373253 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd491a0
+
+I0426 16:25:09.373565 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10005,"OrderID":423438289753735169,"Symbol":"LTC/BTC","OrderType":2,"TransType":1,"OrderNumber":3.000000000,"Price":2.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 16:25:09.373575 13828 MemPoolMgr.cpp:37] PushDataNode:0xd491a0
+
+I0426 16:25:10.449054 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd499d0
+
+I0426 16:25:10.449124 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10014,"OrderID":423438289753800705,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":1.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 16:25:10.449129 13828 MemPoolMgr.cpp:37] PushDataNode:0xd499d0
+
+I0426 16:26:22.321226 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4a200
+
+I0426 16:26:22.321596 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10014,"OrderID":423438289758519297,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":1.000000000,"Price":1.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 16:26:22.321638 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4a200
+
+I0426 16:37:38.903197 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4aa30
+
+I0426 16:37:38.903252 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 1, "SessionID" : "vkli3clr", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524731913256","UserID":10005}1.u] 
+ 
+I0426 16:37:38.903257 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4aa30
+
+I0426 16:37:38.903273 13830 MemPoolMgr.cpp:97] GetDataNode:0xd4aa30
+
+I0426 16:37:38.903309 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 1, "SessionID" : "vkli3clr", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524731913256","UserID":10005}]
+
+I0426 16:37:38.910709 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd4aa30
+
+I0426 16:38:22.356905 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4b260
+
+I0426 16:38:22.357087 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[157],msg[{ "WSID" : 1, "SessionID" : "vkli3clr", "Tag":8193,"username":"250816767@qq.com","loginpassword":"test123","srcip":"192.168.0.1","RequestID":"1524731913256"}28 MemPoolMu] 
+ 
+I0426 16:38:22.357095 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4b260
+
+I0426 16:38:22.357125 13830 MemPoolMgr.cpp:97] GetDataNode:0xd4b260
+
+I0426 16:38:22.357149 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 1, "SessionID" : "vkli3clr", "Tag":8193,"username":"250816767@qq.com","loginpassword":"test123","srcip":"192.168.0.1","RequestID":"1524731913256"}], tag:[0x2001]
+
+I0426 16:38:22.404454 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.1],json:[%],recv json:[{"Tag":8194,"SessionID":"vkli3clr","RequestID":"1524731913256","UserID":10009,"Status":0,"WSID":1}],Tag[0xd4b264]
+
+I0426 16:38:22.404479 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd4b260
+
+I0426 16:43:05.198362 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4ba90
+
+I0426 16:43:05.198420 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 3, "SessionID" : "5noyki0i", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524732242971","UserID":10005}IDu] 
+ 
+I0426 16:43:05.198424 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4ba90
+
+I0426 16:43:05.203099 13830 MemPoolMgr.cpp:97] GetDataNode:0xd4ba90
+
+I0426 16:43:05.203130 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 3, "SessionID" : "5noyki0i", "Tag":131089,"srcip":"192.168.0.1","RequestID":"1524732242971","UserID":10005}]
+
+I0426 16:43:05.211104 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd4ba90
+
+I0426 16:43:42.702240 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4c2c0
+
+I0426 16:43:42.702286 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[169],msg[{ "WSID" : 3, "SessionID" : "kf5judf3", "Tag":8193,"username":"test008@qq.com","loginpassword":"123sdaf","srcip":"192.168.0.1","UserID":null,"RequestID":"1524732275978"} 13828 MemPoolME
+I0426 16:43:42.702291 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4c2c0
+
+I0426 16:43:42.702697 13830 MemPoolMgr.cpp:97] GetDataNode:0xd4c2c0
+
+I0426 16:43:42.702719 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 3, "SessionID" : "kf5judf3", "Tag":8193,"username":"test008@qq.com","loginpassword":"123sdaf","srcip":"192.168.0.1","UserID":null,"RequestID":"1524732275978"}], tag:[0x2001]
+
+I0426 16:43:42.756604 13830 LoginOutMgr.cpp:118] ManagerSrv-->WS, User:test008@qq.com, UserId:10008 alread online, and kick it; routingkey:[WebSrv.1],json:[%],recv json:[{"Tag":131105,"SessionID":"kf5judf3","RequestID":"1524732275978","Status":-2,"WSID":1}],Tag[0xd4c2c4]
+
+I0426 16:43:42.756641 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.3],json:[%],recv json:[{"Tag":8194,"SessionID":"kf5judf3","RequestID":"1524732275978","UserID":10008,"Status":0,"WSID":3}],Tag[0xd4c2c4]
+
+I0426 16:43:42.756655 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd4c2c0
+
+I0426 16:43:43.673298 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4caf0
+
+I0426 16:43:43.673318 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[171],msg[{ "WSID" : 1, "SessionID" : "0c0kcura", "Tag":8193,"username":"250816767@qq.com","loginpassword":"test123","srcip":"192.168.0.1","UserID":null,"RequestID":"1524732276613"}3828 �] 
+ 
+I0426 16:43:43.673321 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4caf0
+
+I0426 16:43:43.674125 13830 MemPoolMgr.cpp:97] GetDataNode:0xd4caf0
+
+I0426 16:43:43.674150 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 1, "SessionID" : "0c0kcura", "Tag":8193,"username":"250816767@qq.com","loginpassword":"test123","srcip":"192.168.0.1","UserID":null,"RequestID":"1524732276613"}], tag:[0x2001]
+
+I0426 16:43:43.720253 13830 LoginOutMgr.cpp:118] ManagerSrv-->WS, User:250816767@qq.com, UserId:10009 alread online, and kick it; routingkey:[WebSrv.1],json:[%],recv json:[{"Tag":131105,"SessionID":"0c0kcura","RequestID":"1524732276613","Status":-2,"WSID":1}],Tag[0xd4caf4]
+
+I0426 16:43:43.720464 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.1],json:[%],recv json:[{"Tag":8194,"SessionID":"0c0kcura","RequestID":"1524732276613","UserID":10009,"Status":0,"WSID":1}],Tag[0xd4caf4]
+
+I0426 16:43:43.720481 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd4caf0
+
+I0426 16:43:54.320343 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4d320
+
+I0426 16:43:54.320482 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x20011],len[118],msg[{ "WSID" : 2, "SessionID" : "e0cl2n2o", "Tag":131089,"UserID":10005,"srcip":"192.168.0.1","RequestID":"1524732292280"}] 
+ 
+I0426 16:43:54.320487 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4d320
+
+I0426 16:43:54.320924 13830 MemPoolMgr.cpp:97] GetDataNode:0xd4d320
+
+I0426 16:43:54.320955 13830 LoginOutMgr.cpp:136] WS-->ManagerSrv: Logout,json:[{ "WSID" : 2, "SessionID" : "e0cl2n2o", "Tag":131089,"UserID":10005,"srcip":"192.168.0.1","RequestID":"1524732292280"}]
+
+I0426 16:43:54.328775 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd4d320
+
+I0426 16:44:18.102216 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4db50
+
+I0426 16:44:18.102257 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x2001],len[173],msg[{ "WSID" : 2, "SessionID" : "13vbximi", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524732312226"}28 MemPoolME
+I0426 16:44:18.102260 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4db50
+
+I0426 16:44:18.102272 13830 MemPoolMgr.cpp:97] GetDataNode:0xd4db50
+
+I0426 16:44:18.102291 13830 LoginOutMgr.cpp:71] WS-->ManagerSrv:Login,json:[{ "WSID" : 2, "SessionID" : "13vbximi", "Tag":8193,"username":"test.test@qq.com","loginpassword":"qweqwreqr","srcip":"192.168.0.1","UserID":null,"RequestID":"1524732312226"}], tag:[0x2001]
+
+I0426 16:44:18.149050 13830 LoginOutMgr.cpp:127] ManagerSrv-->WS,Send Login ack msg; routingkey:[WebSrv.2],json:[%],recv json:[{"Tag":8194,"SessionID":"13vbximi","RequestID":"1524732312226","UserID":10005,"Status":0,"WSID":2}],Tag[0xd4db54]
+
+I0426 16:44:18.149101 13830 MemPoolMgr.cpp:46] PushUsedNode:0xd4db50
+
+I0426 16:44:21.145100 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4e380
+
+I0426 16:44:21.146005 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x3003],len[185],msg[{"Tag":12291,"UserID":10008,"OrderID":423438289829232641,"Symbol":"RKT/BTC","OrderType":2,"TransType":1,"OrderNumber":1.000000000,"Price":4.000000000,"SrvIdentify":"manger2order_bkey"}] 
+ 
+I0426 16:44:21.146013 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4e380
+
+I0426 16:45:20.392891 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4ebb0
+
+I0426 16:45:20.392940 13828 MgrConsumer.cpp:33] ConsumerData: Data:tag[0x15000],len[135],msg[{ "WSID" : 2, "SessionID" : "pokofixo", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"pokofixo","RequestID":"1524732381076"}e%] 
+ 
+I0426 16:45:20.392943 13828 MemPoolMgr.cpp:37] PushDataNode:0xd4ebb0
+
+I0426 16:45:20.393348 13831 MemPoolMgr.cpp:97] GetDataNode:0xd4ebb0
+
+I0426 16:45:20.393405 13831 UserMgr.cpp:354] WS-->Manager: DepositAddrRequest: tag:[0x15000],JSON:{ "WSID" : 2, "SessionID" : "pokofixo", "Tag":86016,"UserID":10005,"CoinName":"BTC","SessionID":"pokofixo","RequestID":"1524732381076"}
+I0426 16:45:20.400461 13831 UserMgr.cpp:381] ManagerSrv-->MS,DepositAddrRequest, routingkey:[WebSrv.2], json:[{"Tag":86017,"UserID":10005,"SessionID":"pokofixo","DepsositAddr":"mkoRRf7sgzMUbnfxSBthoWL2jESwCz7qeC"}],tag[0x15000]
+
+I0426 16:45:20.400480 13831 MemPoolMgr.cpp:46] PushUsedNode:0xd4ebb0
+
+I0426 16:46:55.869113 13828 MemPoolMgr.cpp:68] GetEmptyNode:0xd4f3e0
+
